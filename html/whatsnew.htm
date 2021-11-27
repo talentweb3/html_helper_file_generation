@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" >
+<meta charset="utf-8">
+<TITLE>Was ist neu</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2>Was ist neu in Version 10</H2><div class="titleline"></div>
+<P>Die Hauptdateiformate in Version 10 sind die gleichen wie in Version 9 außer Sie verwenden neue Funktionen wie z.B. Unicode Text. All alten Wortlisten können wie bisher geöffnet werden. Hinweisdatenbanken haben ein geändertes Format, die alten können aber leicht konvertiert werden
+</P>
+<P>
+<H4>Wesentliche neue Funktionen in Version 10</H4>
+<UL class="main">
+<LI><B>Gitter füllen</B>
+<UL>
+<LI>Der Gitterfüller kann mit bis zu 63 verschieden Zeichen füllen und bis zu 2 mal schneller bei schwierigen Gittern
+<LI>Das verwendete Worte Fenster kann in der Größe angepasst werden und zeigt nun auch die Wortlängen
+<LI> Die Funtion Wortschatzrätsel füllen verwendet alle Größen von Hinweisdatenbanken und markiert optional alle Hinweise mit Datum und/oder verwendet nur Hinweise die nicht erst kürzlich verwendet worden sind
+<LI> Machen Sie Sudokus größer als 9 x 9 mit Mehrfachzeichen oder benutzerdefinierten Worten
+</UL>
+<LI><B>Pro Gitter füller</B> (optional)
+<UL>
+<LI>Geführte <A HREF="gridfillingwithmanualwordselection.htm"> manuelle Wortauswahl</A>: Sie können jetzt auf das Gitter klicken, um fest zu legen welches Feld als nächstes gefüllt wird.
+<LI>Option zum direkten Befüllen aus einer <A HREF="aboutcluedatabases.htm"> Hinweisdatenbank</A>
+<LI> Option zum Füllen aus mehreren ausgewählten Wortlisten
+<LI>Option zur manuellen Wortwahl, um alle möglichen passenden Worte an zu zeigen
+
+</UL>
+<LI><B>Hinweisdatenbank</B>
+<UL>
+<LI>Gänzlich überarbeiteter neuer <A HREF="databasemanager.htm"> Manager Hinweisdatenbank</A> und neue Datenbankfunktionen
+<LI>Schnellsuche und schnelles Bearbeiten, mächtige Suchfilter für Worte und zusaätzliche Felder (Datum/Rechtschreibung)
+<LI>Flexibler Import und Export von csv Dateien in verschieden Formaten, mit benutzerdefinierter Spaltenwahl
+<LI>Neues Hinweisdatenbankformat mit Unterstützung für benutzerdefinierte Felder
+</UL>
+
+<LI><B>Bearbeiten von Gitter und Hinweisen</B>
+<ul>
+<LI>Das<A HREF="reviewingandeditingclues.htm"> Ansehen/Bearbeiten von Hinweisen</A>  Fenster und das <a href="crosswordstatisticsandcheckingforsimilarwords.htm">Statistik<A> Fenster können nun geöffnet bleiben und aktualisieren sich automatisch
+<LI>Das Rechtschreibungsüberprüfungsfenster in <A HREF="reviewingandeditingclues.htm">Ansehen/Bearbeiten von Hinweisen</A> zeigt nun Vorschläge (nur bei Windows 8/10+)
+<LI><A HREF="lockgrid.htm">Sperren</A> Funktion für einzelne Felder und Worte, oder alle Blöcke und Barren, zusätzlich zum gesamten Gitter
+<LI><A HREF="reviewingandeditingclues.htm">  Das Ansehen/Bearbeiten von Hinweisen</A>Fenster unterstützt nun Hinweise., die nach Buchstaben oder Zufall geordnet sind und hat einen Knopf für die Hinweiseigenschaften.
+<LI><A HREF="gridproperties.htm"> Gittereigenschaften</A> Option, um Pfeile in Schwedenrästeln zu verstecken
+<LI>Schnelles Rauf- und Runterziehen von links und rechts Pfeilen im <A HREF="cluesquares.htm">Hinweisfeldeditor</A>
+</ul>
+
+<LI><B>Word List Manager</B>
+<ul>
+<LI>Schneller Suchfilter zum Finden von Worten
+<LI>Filtern mittels Suchmuster und Wertungen
+<LI>Schnelleres Anschauen von großen Wortlisten
+<LI>Rechtsklick Menü zum Ändern der Wertungen/Löschen/Kopiern der markierten Worte
+<LI>Neu und Konvertiern Fenster erlaubt die Spezifikation von <A HREF="equivalentlettersinwordlists.htm">Buchstabenverfolgung</A> und <A HREF="charactersets.htm"> Zeichensatz</A>
+<LI>Unterstützung von neuen Unicode <A HREF="aboutwordlists.htm">Wortlisten</A> ( ebenso wie .lst mit einem spezillen Zeichensatz, wie in früheren Versionen)
+<LI>Erlaubt Mehrfachauswahlen und Mehrfachkopien (auch in <a href="findingwords.htm">Wort finden</a>)
+</ul>
+
+<LI><B>Statistik und Überprüfen</B>
+<UL>
+<LI>Das <a href="crosswordstatisticsandcheckingforsimilarwords.htm"> Statistik Fenster</a> hat neue Punkte, die die Verteilung von Buchstaben zeigen und die Wahl von Buchstaben erlauben
+<LI>Änliche Worte überprüft nun auch Worte im Gitter gegen alle Worte in den Hinweisen und Wortsuchen für rückwärts geschriebene Worte
+<LI>Codelösung wird nun gegen die schwarze Liste überprüft, um zufällige vulgäre Worte zu vermeiden
+</UL>
+
+<LI><B>Export</B>
+<UL>
+<LI><A HREF="interactivecrosswords.htm">Webexport</A> und <A HREF="interactivecrosswords.htm">Export in Datei</A> haben nun eine Option, die nur die .js Datei der App exportiert.
+<LI><A HREF="copyingtotheclipboard.htm"> In die Zwischenablage kopieren</A> Option zum Kopieren der Beschreibung und der Lösungsinstruktionen
+<LI><A HREF="exportingpuzzles.htm">Export</A> Option für Bilder mit festgelegter Größe in Pixel
+</UL>
+<LI><B>Sonstiges</B>
+<UL>
+<LI>Volle Unterstützung vom Unicode Zeichensatz, inklusive eines neuen (optionalen) Unicode Wortlistenformats
+<LI>Ünterstützung hochauflösender Bildschirme (4K), neue Icons und erneuerte User interfaces
+<LI>Neues Notepad Fenster zum Erstellen und Speichern von Notizen für jedes Rätsel, das geöffnet bleiben kann (Menü Datei)
+<LI><A HREF="backingupandrestoringfiles.htm"> Backup/Wiederherstellen</A> lässt Sie nun alle oder nur bestimmte Datein wählen (und verweendet nun mehr Standard .zip Dateien)
+</UL>
+</UL>
+
+<P>
+<H4>Wesentliche neue Funktionen in Version 9</H4>
+<UL>
+<LI>Neue Lösungsapp mit Unterstützung für iPad, Android 4+ und moderne Webbrowser (HTML 5/Javascript). Benötigt kein installiertes Javascript, ist schneller zu laden und compatibler.
+<LI><A HREF="exportingpuzzles.htm">Export</A> von .puz Dateien mit Rebus und eingekreisten Buchstaben und Optionen ohne Balken
+<LI>Öffnen von codierten .puz Dateien (in der Pro Version, wird der Dechiffriercode automatisch erkannt)
+<LI><A HREF="exportingpictures.htm">Export</A> von einfachen .ipuz Dateien
+<LI><A HREF="gridfillingwithmanualwordselection.htm">manuelles Wortwahl Fenster (Pro Grid Filler) mit Knopf zur Hinweisdatenbank
+<LI>Option um ungewollte Duplikate während der <A HREF="wordsearch.htm">Wortsuche</A> zu vermeiden
+<LI>Überprüfen mittels ungewollte Worte um ungewollte Duplikate von Schlüsselworten im Rätsel zu finden
+<LI><A HREF="autoFind.htm">AutoFind</A> Knöpfe, die bereits angesehen worden sind, werden blasser dargestellt 
+<LI>Präferenzen Einstellungen, um die Standardeinstellungen für Hinweis/Zitat/URL im Hinweiseditor fest zu legen
+<LI>Feineinstellung der vertikalen Position der horizontalen Pfeile im Hinweisfeld Editor
+<LI>Wort hinzufügen im Wortlistenmanager hat einen Knopf, mit dem man mehrere Worte aus der Zwischenablage einfügen kann
+<LI>Wortlisten erneuert   
+</UL>
+
+<H4>Wesentliche neue Funktionen in Version 8</H4>
+<UL>
+<LI>Unterstützung für <A HREF="wordsearch.htm">Wortsuche</A> Rätsel.
+<LI>Integrierte <A HREF="webpub.htm">Web-Veröffentlichung</A>
+<LI>Mehrspalten- Ausdruck und Druckervorschau (<A HREF="printingwithmsword.htm">Arbeitsblatt drucken/exportieren</A>)
+<LI>Export of PDF files (<A HREF="printingwithmsword.htm">Print/Export Worksheet</A>)
+<LI> Automatische Auswahl des Gittermusters und <A HREF="themeplace.htm">Platzieren von Themenworten</A>
+<LI> Auswahl von  <A HREF="keywords.htm">Schlüsselworten</A>  im Gitter (eingekreiste Kästchen)
+<LI><A HREF="exportingpictures.htm">Export</A>von Gittern als PDF und EPS mit Font Einbindung/Bildern 
+<LI>Neue <A HREF="toolbarbuttons.htm">Werkzeugleiste</A> zum einfachen Wechseln zwischen Bearbeiten/Rätsel/Lösung Ansicht und Zoomen 
+<LI>Gittermenüfunktion um die <A HREF="resize.htm"> Gittergrösse zu verändern</A>
+<LI>Viele neu geformte Gittermuster
+<LI>Amerikanische Rätsel <A HREF="aboutcluedatabases.htm"> Hinweisdatenbank</A>
+<LI><A HREF="interactivecrosswords.htm">Applet</A> Unterstätzung für Schwedenrätsel, Wortsuche, Bleistift, Schlangenworte, Bilderrätsel, eingebundener Titel und Copyright, Mehr-Buchstaben-Lösungen und Schlüsselworte. 
+<LI>Gitterprüfung auf  <A HREF="accidental.htm">Versehentliche Worte</A>
+<LI>Unterstützung für neu dokumentiertes <A HREF="XML.htm"> XML Dateiformat</A>, auch genutzt von Applets
+<LI>Hintergrundbild hinzufügen zu Buchstabenkästchen (<A HREF="squareproperties.htm">Kästcheneigenschaften</A>)
+<LI> Verbesserte Handhabung der Mehr-Buchstaben Kästchen und <A HREF="rebus.htm">Bilderrätseln</A>
+<LI><A HREF="exportingpictures.htm">Export</A> von JPEG Bildern
+<LI> Unterstützung für Windows Vista
+</UL>
+
+<H4>New Features since Version 7.0</H4>
+
+<UL>
+<LI>Unterstützung für <A HREF="sudokupuzzles.htm">Sudoku</A>  Rätsel
+<LI><A HREF="backingupandrestoringfiles.htm"> Sicherheits</A>- Dateien (Zum einfacheren Computerwechsel)
+<LI><A HREF="thewordlistmanager.htm"> Wortlisten Manager</A> erlaubt nun einfache Bearbeitung der Themenwortlisten 
+</UL>
+
+<H4>New Features since Version 6</H4>
+
+<UL>
+	<LI>Schauen Sie die Zahlen an während Sie das Gitter bearbeiten (Gittermenü, Ansicht für Optionen)</LI>
+
+	<LI>Neue Option zur Änderung der Rätselgrösse bei Erstellung von<A HREF="creatingvocabularypuzzles.htm"> Wortschatzrätseln</A> (Menüknopf während der Füllung) 
+  </LI>
+
+	<LI>Neue <A HREF="squareproperties.htm"> Kästcheneigenschaften</A>: Individuelle Zahlen Text, oberer rechter Text, Formate in Rätseln, kein waagerecht/senkrecht Hinweis, Hintergrundkreis.
+  </LI>
+
+	<LI><A HREF="gridproperties.htm">Gittereigenschaften</A>  Option um die Farbe der Zahlen einzustellen 
+  </LI>
+
+	<LI>Neue Themenfüllung Option für  "Maximum" Thema
+  </LI>
+
+	<LI>Neue <A HREF="abouttheprofessionalgridfiller.htm">Pro Grid Filler</A> Option zum Anschauen der besten fehlgeschlagenen Füllungen
+  </LI>
+
+	<LI>Fontgrösse im <A HREF="cluesquares.htm">Hinweiskästchen</A> Editor einstellbar
+  </LI>
+
+	<LI><A HREF="autoFind.htm">AutoFind</A> zeigt nur Wortlisten mit Treffern an 
+  </LI>
+
+	<LI><A HREF="findingwords.htm">Wort finden</A> hat neue "alles prüfen" Option um alle Wortlisten zu prüfen und eine Option um nach Länge zu sortieren 
+  </LI>
+
+	<LI>Neue Option um Einstellungen aus einer <A HREF="crosswordtemplates.htm">Vorlage</A> zu übernehmen.</LI>
+
+	<LI>Gitter <A HREF="stylechecking.htm">Stilprüfungs</A>- Option im Gittermenü: 2-Buchstaben-Worte oder unbearbeitete Kästchen hervorheben 
+  </LI>
+
+	<LI>Erstellen Sie <A HREF="creatingvocabularypuzzles.htm"> Wortschatzrätsel</A>, neue Option um Hinweise aus einem fertigen Rätsel herauszuziehen und zu überarbeiten
+  </LI>
+
+	<LI> Zitate/Erklärung  im Hinweiseditor kann nun auch eine URL sein 
+  </LI>
+
+	<LI><A HREF="interactivecrosswords.htm">Java applet</A> unterstützt Links zu URLs in jedem Hinweis </LI>
+
+	<LI>New option in <A HREF="abouttheprofessionalgridfiller.htm">Pro Grid Filler</A> manuelle Wortwahl zeigt eingeschränkte erzwungene Auswahl in benachbarten Wortfeldern </LI>
+
+	<LI>Manual word selection in <A HREF="abouttheprofessionalgridfiller.htm">Pro Grid Filler</A> now shows selected and forced words in the grid</LI>
+
+	<LI><A HREF="autoFind.htm">AutoFind</A> zeigt nun das gewählte Wort im Gitter
+  </LI>
+
+	<LI>Neue Option um eine Wortliste so zu filtern, dass sie nur Worte in (oder ausserhalb) einer anderen Liste einschliesst. 
+  </LI>
+
+	<LI><A HREF="findingwords.htm"> Wort finden</A> unterstützt <A HREF="regularexpressions.htm"> Regulären Ausdruck</A>
+  </LI>
+
+	<LI>Viele andere Verbesserungen und kleinere Fehlerkorrekturen </LI>
+</UL>
+
+<P><B>Neu seit Version 5</B></P>
+
+<UL>
+	<LI>Erstellen und betrachten Sie mehrere <A HREF="creatingvocabularypuzzles.htm"> Wortschatzrätsel</A>
+  </LI>
+
+	<LI>Hinweise automatisch einfüllen von einer <A HREF="aboutcluedatabases.htm"> Hinweisdatenbank..</A>
+  </LI>
+
+	<LI>Verbesserter <A HREF="databasemanager.htm"> Datenbank Manager</A>
+  </LI>
+
+	<LI>Neues Datenbank Dateiformat: es macht Import und Export zu anderen Programmen einfacher, und Dateien können in Excel, etc. geöffnet werden, zum Bearbeiten wenn gewünscht.
+  </LI>
+
+	<LI>Export von <A HREF="printablewebpage.htm"> Druckbare statische Webseiten</A> mit dem Gitter und Hinweisen in mehreren Spalten 
+  </LI>
+
+	<LI>Ändern und Formatieren der Lösungsworte für jeden Hinweis. Dies macht es nun möglich, Antworten mit korrekter Schreibweise zu exportieren.  Wenn Sie eine formatierte Wortliste nutzen, ist die Formatierung komplett automatisch. Wenn Sie lieber Antworten in Grossschreibung mögen, schauen Sie unter <A HREF="preferences.htm">Options</A>.
+  </LI>
+
+	<LI><A HREF="clueeditor.htm"> Hinweis Editor</A> verbessert, um Auswahl der Hinweisdatenbank zu erlauben und die Nachschlagedatenbank zu ändern. 
+  </LI>
+
+	<LI><A HREF="equivalentlettersinwordlists.htm"> Gleichwertige Buchstaben</A> für eine Wortliste definieren (Wortlisten Manager) 
+  </LI>
+
+	<LI><U>Mehrere Buchstaben</U> definieren, um in einem Kästchen beim Drucken/Export der Lösung angezeigt zu werden (<A HREF="squareproperties.htm">Kästcheneigenschaften</A>)
+  </LI>
+
+	<LI>Neue Option um Wortlisten mit Suchmustern zu filtern (<A HREF="copyingandfilteringwordlists.htm">Liste diplizieren/filtern</A>).
+  </LI>
+
+	<LI>Neues Rechtsclick Menü auf Listen von Datenbank Hinweisen zum Bearbeiten/Hinzufügen von Posten 
+  </LI>
+
+	<LI>Rechtsclick auf  Lösungswort um die Schreibweise zu ändern</LI>
+
+	<LI>Hinweise mit dem <A HREF="abouttheprofessionalgridfiller.htm">Pro Grid Filler</A>einfügen </LI>
+
+	<LI>Neue Funktion um Hinweise aus einer Ansammlung von Dateien zu einer Hinweisdatenbank hinzuzufügen und die Hinweise mit Datumsstempel zu versehen</LI>
+
+	<LI>Unterstützung für italienischen Blockstil</LI>
+
+	<LI>Option um Zeichen einzufügen(Bearbeiten Menü)</LI>
+
+</UL>
+
+</BODY>
+</HTML>

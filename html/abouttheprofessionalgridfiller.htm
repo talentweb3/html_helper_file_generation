@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Über Crossword Compiler</TITLE>
+</HEAD>
+
+<BODY>
+<H2><A NAME="about"></A>Der &quot;Professional Gitter Füller&quot;</H2><div class="titleline"></div>
+
+<p>Die beschriebenen Optionen sind nur verfügbar wenn Sie das Add on „Professional
+Gitter Füller“ oder eines der Profi Bündel gekauft haben.</p>
+
+<H2>Manuelle Wordwahl</H2>
+
+<P>Wählen Sie diese Option in  <A HREF="gridfilling.htm">Gitter füllen</A> im Menu <B>Worte</B> , 
+    um die komplette Kontrolle über die Worte, die im
+Füllprozess verwendet werden, zu erahlten. Wenn Sie das Füllen starten, wird
+Ihnen angezeigt, welche für diesen Platz möglichen Worte Sie verwenden können. Für
+mehr Information gehen Sie bitte zu <A HREF="gridfillingwithmanualwordselection.htm">Gitterfüllung
+mit manueller Wortwahl</A>.
+</P>
+
+<H2>Themenworte einpassen</H2>
+
+<p>Im&nbsp; <b>Neues Rätsel erstellen</b> - Fenster können Sie ein Gitter
+basierend auf Ihrer Wahl an Themenworten wählen und befüllen. Mehr dazu finden
+Sie unter <a href="themeplace.htm">Themenworte einpassen</a>. </p>
+
+<H2>Von Datenbank füllen</H2>
+
+<p>Das <a href="gridfilling.htm">Gitter füllen</a> Fenster hat
+eine Option, um das Gitter direkt aus einer Hinweisdatenbak, statt einer
+Wortliste befüllen zu lassen.</p>
+
+<h2>Füllen unter Verwendung mehrerer Wortlisten</h2>
+
+<p>Im <a href="gridfilling.htm">Gitter füllen</a> Fenster
+können Sie mehr als eine Hauptwortliste zur Verwendung wählen. Für die Füllung werden
+alle Worte in den ausgewählten Listen zusammengeführt. Um mehrere Listen auszuwählen
+halten Sie die Ctrl-Taste gedrückt, während Sie auf die gewünschten Listen
+klicken.</p>
+
+
+<H2>Wortbewertungsoptionen</H2>
+
+<P>Wählen Sie die Registerkarte <B>Wertung</B> des Fensters <A HREF="gridfilling.htm">Gitter füllen</A> 
+aus, um die Einstellung vorzunehmen unterschiedliche minimale Wortbewertungen für abhängig von der Wortschlitzlänge. 
+Dies kann nützlich sein, um sicherzustellen, dass Sie "schöne" Wörter in den prominentesten oder längsten Wortfeldern haben.
+Sie können auch Slots im Raster vorab auswählen (bevor Sie das Gitter füllen verwenden) und eine benutzerdefinierte
+ Mindestpunktzahl nur für diese Slots festlegen.</P>
+
+<H2>Rebus und Sonderfüllungen</H2>
+<P>Wählen Sie die Registerkarte <B>Speziell</B> des Fensters <A HREF="gridfilling.htm">Gitter füllen</A> 
+aus, um bestimmte Buchstabenfolgen für die Verwendung als Rebus festzulegen - dh Buchstaben, die angezeigt werden in einem einzigen Quadrat. Wenn Sie beispielsweise <i>Katze</i> als Rebus verwenden, erscheint jedes Wort mit der Buchstabenfolge <i>Katze</i> mit <i>Katze</i> in einem einzelnen Quadrat. Ein Wort wie 'Hauskatze' würde also nur einen 5-Quadrat-Wort-Slot benötigen.
+</P>
+<P>
+Im Feld <b>Buchstaben-/Wortersetzungen</b> können Sie auch allgemeine Ersetzungen vornehmen (ohne mehr als einen Buchstaben in ein Quadrat einzufügen), um eine Vielzahl neuer Füllungen zu erstellen. Geben Sie jede Ersetzung in der Form 'X=Y' ein, wobei X der Buchstabe oder die Buchstaben ist, die Sie ersetzen möchten, und das zu ersetzende Ding. Die rechte Seite (Y) kann leer sein, wenn Sie Buchstaben/Worte löschen möchten.
+</P>
+
+<h2>ortgeschrittene
+Befüllungsoptionen</h2>
+
+<p>Wählen Sie<b>Fortgeschritten</b>im&nbsp;<a
+href="gridfilling.htm">Gitter befüllen</a> -Fensters, um
+verschiedene Optionen für die Befüllung festzulegen.</p>
+
+<p>&nbsp;<b>Möglichkeit teilweise nicht erfolgreiche Befüllungen zu sehen&nbsp;</b></p>
+
+<p>Manchmal ist der Gitterfüller nicht in der Lage eine Füllung zu finden.
+Benutzen Sie diese Möglichkeit, falls Sie den besten Versuch (mit der maximalen
+Anzahl von Worten, die eingesetzt werden konnten) sichern wollen.</p>
+
+<p><b>Flächendeckende Rekursion</b></p>
+
+<p>Wählen Sie diese Option, um den Prozess solange jede mögliche
+Wortkombination versuchen zu lassen, bis etwas passt oder er aufgibt. In diesem
+Fall gibt er nicht auf, bis er eine Lösung gefunden hat, falls eine existiert
+(die Chance dennoch fehl zu schlagen obwohl es eine mögliche Lösung gibt, liegt
+dann in den meisten Fällen nur noch bei unter 0.01%). Der Nachteil davon ist,
+dass der Gitterfüller dann auch viel Zeit mit dem Testen eher
+unwahrscheinlicher Möglichkeiten zubringt.&nbsp; Deaktivieren Sie diese Option,
+um eine nicht flächendeckende Methode zum Befüllen zu nutzen, die weniger Zeit
+mit dem ausloten unwahrscheinlicher Möglichkeiten verbringt. Der Nachteil davon
+ist, dass es Fehlschläge beim Füllversuch geben kann, obwohl es eine mögliche
+Lösung gibt. </p>
+
+<p><b>Nächstes Wort muss verbunden sein</b></p>
+
+<p>Wählen Sie diese Option, um den Gitterfüller das nächste Wort so setzen zu
+lassen, dass es mindestens ein kreuzendes Wort hat. Wenn diese Option
+deaktiviert ist, darf das nächste Wortfeld nur mindestens ein Wort an einer der
+Kreuzungsstellen kreuzen.&nbsp;</p>
+
+<p><b>An der Cursorposition zu füllen beginnen</b></p>
+
+<p>Wählen Sie diese Option damit der Gitterfüller mit dem Wortfeld an der
+Cursorposition beginnend füllt. Wenn Sie diese Option deaktivieren analysiert
+der &nbsp;Gitterfüller das Gitter und startet an einer Position, die er für
+optimal hält.&nbsp;</p>
+
+<p><b>Längstes Wort bevorzugen</b></p>
+
+<p>Diese Option zieht die Befüllung längerer Wortfelder vor. Benutzen Sie dies,
+falls Sie die Wortfelder beginnend mit den längeren Feldern füllen lassen
+wollen.</p>
+
+<p><b>Maximum an Worten in einem Durchgang finden</b></p>
+
+<p>Dies grenzt die maximale Anzahl möglicher Worte ein, die der Füller finden
+wird. Wenn Sie&nbsp; <b>Manuelle Wortwahl</b> nutzen wird dies auch die
+maximale Anzahl von Worten zum Wählen sein, die Ihnen angeboten wird. Mit <b>Automatische
+Wortauswahl </b>ist die Befüllung hier schneller je größer die maximale Anzahl
+ist. Allerdings je größer die Zahl, desto mehr Speicher wird benötigt; also nutzen
+Sie große &nbsp;Zahlen mit Vorsicht. Wenn Sie das Programm zum ersten Mal
+ausführen, ist es so eingestellt, dass es mit dem verfügbaren Speicher Ihres
+Computers gut klappt. Erhöhen Sie die Zahl falls Sie ihren Arbeitsspeicher
+erweitern oder es Ihnen nichts ausmacht, dass Crossword Compiler einen großen
+Teil davon benutzt. Eine höhere Einstellung produziert außerdem bessere
+Wertungsoptimierungen.</p>
+
+<p><b>Mögliches Worte/Puffergröße Verhältnis</b></p>
+
+<p>Die maximale Anzahl gefundener Worte für jedes Feld ist bestimmt durch
+die&nbsp; <b>Maximum an Worten in einem Durchgang finden </b>(M) Einstellung,
+die&nbsp; <b>Mögliche Worte/Puffergröße Verhältnis </b>(P) Einstellung und die
+Anzahl der Worte in der Wortliste mit dieser Wortlänge (N). Wenn N dividiert
+durch P größer ist als M dann wird die Maximalanzahl gefundener Worte gleich M
+sein, anderenfalls wird es so groß wie N dividiert durch P sein. </p>
+
+<p><b>Wiederholen von Teilworten in verschiedenen Worten vermeiden</b></p>
+
+<p>Ist diese Option aktiv, wird der Gitterfüller niemals ein Wort benutzen,
+welches Teile bereits im Rätsel&nbsp;benutzter Worte&nbsp;enthält. Die dabei
+geprüfte Länge von Teilen kann in den <b>Vermeiden von Teilworten der Größe</b>
+-Box bestimmt werden. Ist diese Option nicht aktiviert, wird das Programm immer
+noch gleiche Worte vermeiden, aber nicht mehr beispielsweise die Nutzung von
+&quot;Worte&quot; und &quot;Wort&quot; im gleichen Rätsel. </p>
+
+<p>Wählen Sie die&nbsp; <b>Erweiterte Einstellungen als Standard sichern</b>
+-Box, um Ihre Einstellungen zu speichern und jedes Mal zu nutzen, wenn Sie ein
+Gitter mit Crossword Compiler füllen. Anderenfalls gehen Ihre Einstellungen
+verloren sobald Sie den Crossword Compiler schließen.</p>
+
+<H2>Threads</H2>
+<p>
+    Die Füllmaschinen können moderne Computer voll ausnutzen und mehrere Füllungen gleichzeitig untersuchen. Auf der Registerkarte 
+    <b>Threads</b> im Füllrasterfenster können Sie die verwendeten Ressourcen einschränken oder optimieren. Für die meisten Benutzer sollte die automatische Standardeinstellung in Ordnung sein. Möglicherweise möchten Sie die Anzahl der Threads reduzieren, wenn Sie mehr von Ihrem Computer für andere Ressourcen freigeben oder ihn kühl halten möchten usw. Die Erhöhung der Anzahl der Threads kann in einigen Fällen hilfreich sein, wenn Sie viele verschiedene Lösungen erkunden möchten eine schwierige Aufgabe auf einmal, aber Ihr Computer hat nicht viele CPUs. Durch die Verwendung von mehr Threads können mehr verschiedene anfängliche Startwörter getestet werden, wodurch möglicherweise schneller eine Füllung gefunden wird, als weniger tiefe Suchen durchzuführen.
+</p>
+<p>
+    Mehrere Threads werden auch für die manuelle Wortauswahl verwendet, um die Ausfüllbarkeit des verbleibenden Rasters zu überprüfen und die erzwungenen Wörter zu finden. Die Verwendung der Einstellung Automatisch oder der Anzahl der Threads gleich der Anzahl der CPUs führt im Allgemeinen zu den schnellsten Ergebnissen.
+</p>
+
+<H2>Timing</H2>
+<p>
+    Auf der Registerkarte <b>Timing</b> im Fenster „Raster füllen“ können Sie genau einstellen, wie viel Zeit der Füller mit den verschiedenen Teilen der Suche verbringt. Durch Ändern dieser Einstellungen können Sie die Kompromisse zwischen schnellen Ergebnissen und der frühzeitigen Erkennung einer unmöglichen Füllung feinjustieren. Wenn Sie sich nicht um die Details kümmern möchten, sollten die Standardeinstellungen für die meisten Benutzer in Ordnung sein.
+</p>
+<p>
+    Die erste Einstellung gilt für alle Füllungen und bestimmt die Zeit, die der Füller mit der Analyse eines anfänglich teilweise gefüllten Rasters verbringt, bevor er versucht, das Füllen fortzusetzen. Wenn Sie diese Zahl erhöhen, wird der Füller langsamer gestartet, aber bei schwierigen Füllungen wird es weniger wahrscheinlich, dass enge Beschränkungen in verschiedenen Bereichen des Rasters später zu Sackgassen führen. Der Standardwert sollte ausreichen, um schnell einen lokalen Bereich zu identifizieren, der nicht gefüllt werden kann.
+</p>
+<p>
+    Die verbleibenden Einstellungen gelten für <A HREF="gridfillingwithmanualwordselection.htm">Manuelle Wortauswahl</A> und legen fest, ob der Füller jede mögliche Passung eingehend prüft – das Studium aller Wörter dauert länger – oder eine flachere Suche durchführt Dadurch können alle Wörter schneller überprüft werden. Die Prüfung erfolgt in zwei Schritten: einer „schnellen“ Erstprüfung, die oft schnell viele Wörter ausschließen kann, und einer tiefergehenden Prüfung, die schwierigere Probleme erkennen kann. Es gibt separate Einstellungen zum Optimieren des Timings zum Identifizieren einer lokal erzwungenen Wortwahl und zum eingehenden Prüfen, ob eine vollständige Füllung möglich ist.
+</p>
+
+<H2>Speichern und Wiederverwenden von Füllkonfigurationen</H2>
+<p>
+  Mit der Dropdown-Menüoption der Schaltfläche <b>Füllen</b> können Sie eine Reihe von Fülleinstellungen mit einem Namen zur einfachen Wiederverwendung speichern. Die gespeicherten Einstellungen können verwendet werden, indem sie aus dem Dropdown-Menü ausgewählt werden, und sie können auch schnell über das Dropdown-Menü auf der Schaltfläche AutoFill in der Hauptsymbolleiste aufgerufen werden.
+</p>
+
+</body>
+
+</html>

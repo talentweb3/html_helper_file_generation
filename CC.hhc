@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="How to make a crossword">
+		<param name="Local" value="html/howtomakeacrossword.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Using different languages">
+		<param name="Local" value="html/usingdifferentlanguages.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ordering Crossword Compiler">
+		<param name="Local" value="html\orderingcrosswordcompiler.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Opening and creating crosswords">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Opening an existing puzzle">
+			<param name="Local" value="html/openinganexistingpuzzle.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Crossword Templates">
+			<param name="Local" value="html/crosswordtemplates.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Types of puzzle">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Barred">
+				<param name="Local" value="html/barred.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Clues in squares">
+				<param name="Local" value="html/cluesinsquares.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Coded">
+				<param name="Local" value="html/coded.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Freeform/Vocabulary">
+				<param name="Local" value="html/freeformvocabulary.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Shapes">
+				<param name="Local" value="html/shapes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Standard (American, cryptic, quick...)">
+				<param name="Local" value="html/standardamericancrypticquick.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="French style">
+				<param name="Local" value="html/frenchstyle.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sudoku">
+				<param name="Local" value="html\sudokupuzzles.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Word Searches">
+				<param name="Local" value="html\wordsearch.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Designing and editing grids">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using a pattern from a grid library">
+			<param name="Local" value="html/usingapatternfromagridlibrary.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Editing the grid">
+			<param name="Local" value="html/editingthegrid.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Keyboard controls">
+			<param name="Local" value="html/keyboardcontrols.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mouse controls">
+			<param name="Local" value="html/mousecontrols.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Toolbar buttons">
+			<param name="Local" value="html/toolbarbuttons.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Symmetry">
+			<param name="Local" value="html/symmetry.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grid Properties">
+			<param name="Local" value="html/gridproperties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Square Properties">
+			<param name="Local" value="html/squareproperties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clue Squares">
+			<param name="Local" value="html/cluesquares.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grid Font">
+			<param name="Local" value="html/gridfont.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filling blocks">
+			<param name="Local" value="html/fillingblocks.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Flipping the puzzle">
+			<param name="Local" value="html/flippingthepuzzle.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Removing blanks">
+			<param name="Local" value="html/removingblanks.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Making a snaking word">
+			<param name="Local" value="html/makingasnakingword.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using key words">
+			<param name="Local" value="html\keywords.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grid Libraries">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using a pattern in a grid library">
+				<param name="Local" value="html/usingapatterninagridlibrary.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Adding to a grid pattern">
+				<param name="Local" value="html/addingtoagridpattern.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Extracting grid patterns from files">
+				<param name="Local" value="html/extractinggridpatternsfromfiles.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Putting words in the grid">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating vocabulary puzzles">
+			<param name="Local" value="html/creatingvocabularypuzzles.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating word search puzzles">
+			<param name="Local" value="html\wordsearch.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AutoFind">
+			<param name="Local" value="html/autofind.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding Words">
+			<param name="Local" value="html/findingwords.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AutoFill">
+			<param name="Local" value="html/autofill.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Grid filling">
+			<param name="Local" value="html/gridfilling.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="The Professional Grid Filler">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About the Professional Grid Filler">
+				<param name="Local" value="html/abouttheprofessionalgridfiller.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Grid filling with manual word selection">
+				<param name="Local" value="html/gridfillingwithmanualwordselection.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Placing theme words">
+				<param name="Local" value="html\themeplace.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Writing Clues">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clue Editor">
+			<param name="Local" value="html/clueeditor.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Reviewing and editing clues">
+			<param name="Local" value="html/reviewingandeditingclues.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clue squares">
+			<param name="Local" value="html/cluesquares.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Solution formats">
+			<param name="Local" value="html/solutionformats.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clue properties">
+			<param name="Local" value="html/clueproperties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Linking clues">
+			<param name="Local" value="html/linkingclues.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding Anagrams">
+			<param name="Local" value="html/findinganagrams.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding anagram indicators">
+			<param name="Local" value="html/findinganagramindicators.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding Letter indicators">
+			<param name="Local" value="html/findingletterindicators.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Clue databases">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About clue databases">
+				<param name="Local" value="html/aboutcluedatabases.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Database Manager">
+				<param name="Local" value="html/databasemanager.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using to create a vocabulary puzzle">
+				<param name="Local" value="html/creatingvocabularypuzzles.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Printing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Printing the puzzle">
+			<param name="Local" value="html/printingthepuzzle.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Print/Export Worksheet">
+			<param name="Local" value="html/printingwithmsword.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Print Headers">
+			<param name="Local" value="html/printheaders.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Printer Setup">
+			<param name="Local" value="html/printersetup.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Desktop publishing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Desktop publishing">
+			<param name="Local" value="html/desktoppublishing.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Copying to the clipboard">
+			<param name="Local" value="html/copyingtotheclipboard.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exporting puzzles">
+			<param name="Local" value="html/exportingpuzzles.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Creating web pages">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Publishing to the web">
+			<param name="Local" value="html\webpub.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Interactive crosswords">
+			<param name="Local" value="html/interactivecrosswords.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Printable web page">
+			<param name="Local" value="html/printablewebpage.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Making your own HTML templates">
+			<param name="Local" value="html/makingyourownhtmltemplates.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Applet properties">
+			<param name="Local" value="html/javaappletproperties.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Managing Word Lists">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="About word lists">
+			<param name="Local" value="html/aboutwordlists.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Theme lists">
+			<param name="Local" value="html/themelists.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="The Word List Manager">
+			<param name="Local" value="html/thewordlistmanager.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Viewing word lists">
+			<param name="Local" value="html/viewingwordlists.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating a list">
+			<param name="Local" value="html/creatingalist.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding and removing words">
+			<param name="Local" value="html/addingandremovingwords.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding text files">
+			<param name="Local" value="html/addingtextfiles.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding lists to each other">
+			<param name="Local" value="html/addingliststoeachother.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="About word list scoring">
+			<param name="Local" value="html/aboutwordlistscoring.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Changing word scores">
+			<param name="Local" value="html/changingwordscores.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Character sets">
+			<param name="Local" value="html/charactersets.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Converting word lists">
+			<param name="Local" value="html/convertingwordlists.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reference">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Crossword Glossary">
+			<param name="Local" value="html/crosswordglossary.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Introduction to cryptic clues">
+			<param name="Local" value="html/introductiontocrypticclues.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bibliography">
+			<param name="Local" value="html/bibliography.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Acknowledgements">
+			<param name="Local" value="html/acknowledgements.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Customer support and upgrades">
+			<param name="Local" value="html/customersupportandupgrades.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

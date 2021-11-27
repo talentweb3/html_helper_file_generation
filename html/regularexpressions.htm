@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META charset="utf-8">
+<TITLE>Reguläre Ausdrücke</TITLE>
+</HEAD>
+
+<BODY>
+
+
+
+<H2>Reguläre Ausdrücke</H2><div class="titleline"></div>
+
+<P><B>Dies ist ein fortgeschrittenes Thema (nicht verfügbar in der Demo)</B></P>
+
+<P>Reguläre Ausdrücke sind sehr effektiv, aber auch schwer zu verstehen und zu verwenden. </P>
+
+<P>Die <A HREF="findingwords.htm"> Worte finden</A>  Funktion erlaubt es Ihnen eine sehr allgemeine Mustererkennung zu nutzen, die als reguläre Ausdrücke bekannt ist. Diese können auch verwendet werden, um mit <A HREF="copyingandfilteringwordlists.htm"> Liste duplizieren/filtern</A> eine Wortliste zu filtern oder modifizieren. </P>
+
+<P>Die reguläre Ausdrücke Syntax ist <B>nicht</B> dieselbe, wie die Basis Wort finden Syntax. Um die erweiterten Funktionen der regulären Ausdrücke zu nutzen, stellen Sie vor Ihren Suchstrang einen Schrägstrich (backslash) (es sei denn es ist offensichtlich ein regulärer Ausdruck weil er eines der Spezialsymbole <B><CODE>\(+{$|</CODE></B>  enthält).</P>
+
+<P>Eine detaillierte Erklärung der regulären Ausdrücke ist hier nicht möglich.  Es gibt viele Webseiten und Referenzbücher dazu (der Crossword Compiler verwendet eine perlähnliche Syntax). Jedenfalls ist hier eine kleine Zusammenfassung der Spezialzeichen:</P>
+
+<TABLE border=0 cols=2 >
+
+  <TR>
+    <TD width=35%>
+<blockquote>
+        <strong>.</strong></blockquote></TD>
+    <TD>(Punkt) Finde jedes der Zeichen </TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>[..]</strong></blockquote></TD>
+    <TD>Zeichenklasse : finde jede der aufgelisteten Zeichen</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>[^…]</strong></blockquote></TD>
+    <TD>Negierte Zeichenklasse: alle außer den gelisteten Zeichen finden </TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>*</strong></blockquote></TD>
+    <TD>Mit vorheriger Einheit 0 oder mehrere Male übereinstimmen </TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>+</strong></blockquote></TD>
+    <TD>Mit vorheriger Einheit 1 oder mehrere Male übereinstimmen</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>?</strong></blockquote></TD>
+    <TD>Mit vorheriger Einheit 0 oder 1 Mal übereinstimmen </TD>
+  </TR>
+
+  <TR>
+    <TD height="18">
+<blockquote>
+        <strong>^</strong></blockquote></TD>
+    <TD>Start des Wortes oder der Ansammlung</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>$</strong></blockquote></TD>
+    <TD>Ende des Wortes oder der Ansammlung</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <strong>|</strong></blockquote></TD>
+    <TD>Oder</TD>
+  </TR>
+</TABLE>
+
+<P>Zusätzlich können Sie, wie mit der Basis Syntax,  : und ; Vorzeichen verwenden, um die Suche Fall- und Interpunktionsabhängig zu gestalten. Beispiele: </P>
+
+<TABLE style="font-size: 11pt;width:35em" border=0 cols=2>
+
+
+
+  <TR>
+    <TD width=35%>
+<blockquote>
+        \<B>AP*X</B></blockquote></TD>
+    <TD>findet <B>abaxial</B>, <B>addax</B>, <B>Ajax</B>, <B>coaxer</B>, <B>pax</B>, etc.<B></B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>\AP.*X</B></blockquote></TD>
+    <TD>findet <B>apex, apexes</B>, <B>apoplexy</B>, <B>soapbox</B>, etc. </TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>\^AP.*X$</B></blockquote></TD>
+    <TD>findet <B>apex</B>, <B>appendix</B>, <B>Appomattox, apteryx</B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>:\^A.*x</B></blockquote></TD>
+    <TD>findet <B>Aix-en-Provence</B>, <B>Ajax, etc</B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>\ap.?x</B></blockquote></TD>
+    <TD>findet <B>apex</B>, <B>apexes</B></TD>
+  </TR>
+</TABLE>
+
+<P>Klammern können verwendet werden, um Buchstaben zu gruppieren, <B>^(#@)*$</B>findet, gleich nach dem Start und bis zum Ende, eine Serie von Null oder mehr Buchstabenkombinationen der Form Konsonant Vokal. Beispiele: </P>
+
+<TABLE style="font-size: 11pt;width:35em" border=0 cols=2>
+
+  <TR>
+    <TD width=35%>
+<blockquote>
+        <B>^(#@)*$</B></blockquote></TD>
+    <TD>findet <B>baba</B>, <B>badinage</B>, <B>magic eye, Tahiti,</B> etc</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>(tt|ll).*(zz|ww)</B></blockquote></TD>
+    <TD>findet <B>hail-fellow-well-met, hollow-ware</B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B><CODE>(zz|ss)$</CODE></B></blockquote></TD>
+    <TD>findet <B> abbess, ableness, zizz, </B>etc.<B></B></TD>
+  </TR>
+</TABLE>
+
+<P>You can also use \1. \2 etc to stand for parts of a match in a previous bracket,</P>
+
+<TABLE style="font-size: 11pt;width:35em" border=0 cols=2 >
+
+  <TR>
+    <TD width=35%>
+<blockquote>
+        <B>(l.*t).*\1</B></blockquote></TD>
+    <TD width=69%>findet<B>,</B> <B>helter-skelter, little by little, multicultural, </B>etc</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>(…)\1</B></blockquote></TD>
+    <TD>findet <B>ack-ack</B>, <B>assassin</B>, <B>Mississippi</B>, <B>satiation</B>, etc</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B>^(….).*\1$</B></blockquote></TD>
+    <TD>findet <B>abracadabra</B>, <B>airy-fairy, beriberi, hand in hand,  </B>etc.</TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B><CODE>;^(....)\1$</CODE></B></blockquote></TD>
+    <TD>findet <B>beriberi, caracara</B>, <B>chowchow</B>, <B>couscous</B>, <B>hotshots</B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B><CODE>(..)i(..).*\2i\1</CODE></B></blockquote></TD>
+    <TD>findet <B>non-intervention</B>, <B>noninterventionist</B>, <B>noninterventionists</B></TD>
+  </TR>
+
+  <TR>
+    <TD>
+<blockquote>
+        <B><CODE>^([xjq]).*\1</CODE></B></blockquote></TD>
+    <TD>findet <B>jejune</B>, <B>jumbo jet</B>, <B>quinquina</B>, <B>x-axis</B>, etc  </TD>
+  </TR>
+</TABLE>
+
+<H3>Reguläre Ausdrücke Ersatz </H3>
+
+<P>Sie können die <A HREF="copyingandfilteringwordlists.htm"> Liste duplizieren/filtern </A> Funktion verwenden, um Buchstabenketten in einer Wortliste zu ersetzen. Das Suchmuster kann irgendein regulärer Ausdruck sein, welcher vom Text, den Sie eingeben, ersetzt wird. Der Ersatztext kann <B>$1</B>, <B>$2</B>, etc, enthalten, um als Teil eines eingeklammerten Treffers zu stehen. </P>
+
+<P>Ersatzteile können einfach oder effektiver sein, wie beispielsweise der Ersatz von <B>ise</B> mit <B>ize</B>,.um alle Doppelbuchstaben durch einfache Buchstaben zu ersetzen, verwenden Sie <B>(.)\1</B> als Ersatzmuster, und <B>$1 </B>als den Ersatztext. Oder verwenden Sie den Ersatz <B>a(.)a</B> mit <B>b$1$1b</B> um z.B. <B>again</B> zu <B>bggbin</B>zu ändern.</P>
+
+</BODY>
+</HTML>

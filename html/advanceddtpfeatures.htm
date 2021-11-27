@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Fortgeschrittene DTP Optionen</TITLE>
+</HEAD>
+
+<BODY>
+
+
+
+<H2><A NAME="advanced"></A>Fortgeschrittene DTP Optionen</H2><div class="titleline"></div>
+
+<p>Für den fortgeschrittenen Desktop Publisher unterstützt Crossword
+Compiler&nbsp;DDE (Dynamic Data Exchange). Dies erlaubt Ihnen Makros oder
+Programme zu schreiben, um schnell Publikationen basierend auf Crossword
+Compiler Dateien herstellen zu können. Beispielsweise könnte Ihr Makro oder
+Programm durch eine Liste von Dateien gehen, in jedem die Rätsel und Hinweise
+in die Zwischenablage kopieren, im Veröffentlichungsprogramm anordnen, eine neue
+Seite erstellen, und dann mit dem nächsten Rätsel ebenso fortfahren.&nbsp;</p>
+
+<p>Die zu benutzende DDE Überschrift ist &nbsp;hierfür <b>control</b>; der
+Anwendungsname <b>ccw</b>. Crossword Compiler kann Makro Strings im folgenden
+Format akzeptieren:</p>
+
+<p>[Command1(Params1)][Command2(Params2)][.....</p>
+
+<p>Die folgenden Kommandos und Parameter sind verfügbar:</p>
+
+<TABLE border=0 cols=3 frame=box rules=all style="font-size: 11pt;">
+
+<TR VALIGN="top">
+    <TD width=18% height="17"><B>Kommando</B></TD>
+<TD width=39%><B>Parameter</B></TD>
+<TD width=43%><B>Beispiel</B></TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="17">Öffnen</TD>
+<TD width=39%>&quot;Dateiname&quot;
+  (Muss in Anführungszeichen stehen)</TD>
+<TD width=43%>[Öffnen(&quot;C:\CCW\My Crossword&quot;)]</TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="17">Öffnen</TD>
+<TD width=39%>&quot;Dateiname&quot;,
+  &quot;Vorlage&quot;</TD>
+<TD width=43%>[Öffnen(&quot;C:\CCW\My
+  Crossword&quot;,&quot;Italian&quot;)]</TD>
+</TR>
+
+
+<TR VALIGN="top">
+    <TD width=18% height="17">Schließen</TD>
+<TD width=39%>Keine</TD>
+<TD width=43%>[Schliessen()]</TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="17">Beenden</TD>
+<TD width=39%>Keine</TD>
+<TD width=43%>[Beenden()]</TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="17">Drucken</TD>
+<TD width=39%>Keine</TD>
+<TD width=43%>[Drucken()]</TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="32">Export</TD>
+    <TD width=39%>Keine<br>
+      Nummer 0-12<br>
+  &quot;Export Einstellung&quot;, &quot;Dateiname&quot;
+</TD>
+    <TD width=43%>[Export()]<br>
+      [Export(2)]<br>
+  [Export(&quot;PDF - Lösung&quot;,&quot;c:\ccw\mein Rätsel.pdf&quot;)]
+</TD>
+</TR>
+
+<TR VALIGN="top">
+    <TD width=18% height="32">ExportGruppe</TD>
+    <TD width=39%>&quot;Export
+  Gruppe&quot;, &quot;Dateiname&quot;
+</TD>
+    <TD width=43%>[ExportGruppe(&quot;Meine
+  Exporte&quot;,&quot;c:\ccw\mein Rätsel.zip&quot;)]
+</TD>
+</TR>
+
+
+
+</TABLE><BR>
+
+<p style='margin-bottom:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p><b>Öffnen</b> öffnet die bestimmte Datei. Optionales Argument bestimmt <a
+href="crosswordtemplates.htm">Vorlage</a>.<br>
+<b>Schliessen</b> schliesst das aktuelle Rätsel.<br>
+<b>Beenden</b> schliesst Crossword Compiler<br>
+<b>Drucken</b> zeigt den <A HREF="printingthepuzzle.htm">Drucken</A> Dialog für das aktive Rätsel.<br>
+<b>Export </b>ohne Parameter zeigt den <a
+href="exportingpuzzles.htm">Export</a> Dialog an.<br>
+<b>Export </b>mit zwei Parametern exportiert in spezifischem individuellem
+Export Format in den bestimmten Dateinamen.<br>
+<b>Export </b>mit einem Parameter kopiert das aktive Kreuzwort in die
+&nbsp;Zwischenablage, nach den folgenden Parameter Zuordnungen:</p>
+
+<blockquote>
+
+<p>0 - Rätsel<br>
+1 - Lösung<br>
+2 - Nummerierte Lösung<br>
+3 - Kode Gitter (in kodierten Rätseln)<br>
+4 - Kode Lösung (in kodierten Rätseln)<br>
+5 - Kode Lösungstext (in kodierten Rätseln)<br>
+6 - Hinweise<br>
+7 - Antworten<br>
+8 - Erklärungen<br>
+9 - Füllworte<br>
+10 - Wortliste<br>
+11 - Schlüsselwort Gitter (wenn das Gitter ein Schlüsselwort hat)<br>
+12 - Schlüsselwort Lösung (wenn das Gitter ein Schlüsselwort hat)</p>
+
+</blockquote>
+
+<p>Rätsel, Lösung und nummerierte Lösung, Kode Gitter und Kode Lösung werden
+als Bild (Metadatei) kopiert, der Rest als&nbsp;Rich Text Format. <br>
+<br>
+<b>Exportgruppe</b> sichert ein bestimmtes&nbsp;<a
+href="exportgroups.htm">Exportformat Gruppe</a> mit dem
+vorgegebenen Basisdatei Name (Erweiterung stört nicht solange die Gruppe nicht
+gezippt wird. In diesem Fall sollte die Erweiterung .zip sein). </p>
+
+<p>Schauen Sie unter dem Thema&nbsp; <a
+href="exportingpuzzles.htm">Export</a>&nbsp; nach, wie Sie
+Exportformate und Exportgruppen sichern können. </p>
+
+</body>
+
+</html>

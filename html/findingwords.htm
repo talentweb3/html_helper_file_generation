@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Worte finden</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2><A NAME="findword"></A>Worte finden</H2><div class="titleline"></div>
+
+<p>&nbsp;Wenn Sie Worte finden wollen, die in ein spezielles Muster passen,
+können Sie das&nbsp; <b>Worte finden...</b> Kommando vom <b>Worte</b> Menü
+verwenden.</p>
+
+<p>Geben Sie ein Muster als Suchwort ein und es wird passende Worte finden,
+z.B.:&nbsp;&nbsp;<o:p></o:p></p>
+
+<TABLE  border=0 cols=2>
+
+  <TR VALIGN="top">
+    <TD width=29%><blockquote>
+        <p><B>T???SH</B></p>
+      </blockquote></TD>
+    <TD width=71%>findet <B>THRASH, THRESH </B>und <B>THRUSH</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=29%><blockquote>
+        <p><B>AP*X</B></p>
+      </blockquote></TD>
+    <TD width=71%>findet <B>APEX</B>, <B>APPENDIX</B> und <B>APTERYX</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=29%><blockquote>
+        <p><B>?*Q*P</B></p>
+      </blockquote></TD>
+    <TD width=71%>findet <B>ACQUAINTANCESHIP</B>, <B>EQUIP</B> und <B>REEQUIP</B></TD>
+</TR>
+</TABLE>
+
+<p>Benutzen Sie&nbsp; <b>*</b> um eine Anzahl Buchstaben zu vertreten,
+und&nbsp; <b>?</b> für einen unbekannten Buchstaben. Sie können auch Gruppen
+alternativer Buchstaben nutzen, indem Sie die Gruppe mit eckigen Klammern
+einschließen. Verwenden Sie&nbsp; <b>@</b> als Platzhalter für Vokale,
+und&nbsp; <b>#</b> für Konsonanten. Nehmen Sie&nbsp; <b>^</b> als
+&quot;nicht&quot; vor einer Buchstabengruppe. Z.B.:&nbsp;</p>
+
+<TABLE style="font-size: 11pt; width:35em;" border=0 cols=2 >
+
+  <TR VALIGN="top">
+    <TD width=23%><blockquote>
+        <p><B>[QZ]*[QZ]</B></p>
+      </blockquote></TD>
+<TD width=77%>findet <B>QUARTZ</B>, <B>QUIZ</B>, und <B>ZIZZ</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=23%><blockquote>
+        <p><B>#######</B></p>
+      </blockquote></TD>
+<TD width=77%>findet <B>RYTHMNS</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=23%><blockquote>
+        <p><B>P@#@#?LLY</B></p>
+      </blockquote></TD>
+<TD width=77%>findet <B>PITIFULLY</B> und <B>PIVOTALLY</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=23%><blockquote>
+        <p><B>Q^U*^S</B></p>
+      </blockquote></TD>
+<TD width=77%>findet <B>QATAR</B>, <B>QINTAR</B>, und <B>QOPH</B></TD>
+</TR>
+
+  <TR VALIGN="top">
+    <TD width=23%><blockquote>
+        <p><B>CO*^[LN]ESS</B></p>
+      </blockquote></TD>
+<TD width=77%>findet <B>COMPRESS</B>, <B>CONFESS</B>, <B>CONGRESS</B>, und <B>COUNTESS</B></TD>
+</TR>
+</TABLE><BR>
+
+
+<p>* kann für jede beliebige Anzahl Buchstaben stehen, einschließlich
+Leerzeichen. Falls Sie ein Wort beginnend mit&nbsp; <b>L</b> und endend
+auf&nbsp; <b>N</b> mindestens zwei Buchstaben nach dem&nbsp; <b>L</b>, können
+Sie <b>*L??*N</b> eingeben. Dies findet beispielsweise <b>ALIEN</b>, was zwei
+&nbsp;Buchstaben zwischen <b>L</b> und <b>N</b> hat, und <b>ALLERGEN</b> , was
+mehrere Buchstaben dazwischen hat. <b>*L*N</b> würde beispielsweise <b>KILN</b>
+auflisten, wobei&nbsp; <b>L</b> und <b>N</b> aufeinander folgen.&nbsp;</p>
+
+<p><b>Interpunktion forcieren (;)</b>; Stellen Sie ein Semikolon an den Anfang
+des Suchmusters, damit die gefundenen Worte genau dieselbe Interpunktion, wie
+das vorgegebene Suchwort, haben. Anderenfalls wird das Ergebnis unabhängig
+davon sein. Z.B.:. <b>;?????</b> findet alle fünf buchstabigen Worte ohne
+jegliche Interpunktion. <b>?????</b> alleine würde Worte wie <b>at bay </b>einschließen.&nbsp;</p>
+
+<p><b>Großschreibung (:)</b> Setzen Sie einen Doppelpunkt an den Start des
+Suchmusters, um es abhängig von Groß- und Kleinschreibung zu machen.&nbsp;</p>
+
+<p><b>Normale Ausdrücke: (\)</b> Tätigen Sie eine effektive Suche nach&nbsp; <a
+href="regularexpressions.htm">Normalen Ausdrücken</a> ,
+indem Sie einen \ voranstellen (nur für fortgeschrittene Anwender!).</p>
+
+<p>Standardmäßig werden die gefundenen Worte alphabetisch sortiert. Wählen Sie
+die <b>Nach Länge sortieren </b>Option, falls Sie sie lieber nach Länge
+geordnet haben (kürzeste Worte zuerst).</p>
+
+<p>Sie können die minimalen und maximalen Wortlängen der gefundenen Worte durch
+Ändern der Einstellungen in der relevanten Box anpassen. Nachdem Sie ein
+Suchmuster eingegeben haben, können Sie in jeder der verfügbaren <a
+href="aboutwordlists.htm">Wortlisten</a> durch Klicken auf
+die Spalten mit den Wortlisten Namen durchsuchen.&nbsp;</p>
+
+<p>Um Buchstaben zu ändern die als Vokale gewertet werden, (das <b>@</b>
+Symbol), rechtsklicken Sie irgendwo in das <b>Worte finden</b> Fenster außer in
+die Listen Box, und klicken Sie auf den&nbsp; <b>Vokale setzen... </b>Menüpunkt.
+Geben Sie die Buchstaben ein, von denen Sie wollen, dass sie. Konsonanten sind
+(z.B.. # gleicht ^@).</p>
+
+<p>Wenn Sie ein gefundenes Wort wählen, können Sie es durch Drücken des <b>Kopieren</b>
+Knopfes in die &nbsp;Zwischenablage kopieren, oder wenn Sie <b>Worte finden</b>
+verwendet haben, mit dem Cursor in eine geeignete Stelle im Gitter direkt&nbsp;
+<b>Einfügen</b>. Wenn Sie ein Wort mit geöffnetem <b>Hinweis Editor</b>
+kopieren, können Sie es in den &nbsp;<a
+href="clueeditor.htm">Hinweis Editor</a> als Teil eines
+Hinweises einfügen.</p>
+
+<p>Falls Sie Worte finden wollen, die in das Rätsel passen, ist die <a
+href="autoFind.htm">AutoFind</a> Funktion einfacher.</p>
+
+<p>Sie können die gefundenen Worte in einer Textdatei speichern, indem Sie auf
+die Liste rechts klicken, und&nbsp; <b>Gefundene Worte speichern...</b> wählen,
+und dann den Namen der Datei, unter der Sie sichern wollen, eingeben. Wählen
+Sie alternativ dazu&nbsp; <b>Alles in Zwischenablage kopieren</b> vom selben
+Rechtsklick Menü.&nbsp;</p>
+
+<p>Wenn Ihre Suche ein Wort hervorbringt, welches Sie von der <a
+href="aboutwordlists.htm">Wortliste</a> löschen wollen,
+selektieren Sie das Wort und drücken <b>Löschen</b>. Es wird das Wort aus
+derjenigen Liste entfernen, in der es gefunden wurde.&nbsp;</p>
+
+
+</body>
+
+</html>

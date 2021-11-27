@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Gitterinblick</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2><A NAME="gridInsight"></A>Gitterinblick</H2><div class="titleline"></div>
+
+<P>
+   <B>Gitterinblick</B> ist eine Funktion, die automatisch Raster analysiert, während Sie sie entwerfen und Wörter einfügen, um alle Probleme aufzuzeigen. Es werden auch erzwungene Wörter und Buchstaben in Quadraten angezeigt, in denen das aktuelle Rastermuster und die aktuellen Buchstaben die Verwendung bestimmter Wörter oder Buchstaben erfordern, um eine Füllung zu vervollständigen.
+</P>
+<p>
+  Die Gitterinblick-Funktion kann durch Klicken auf die runde Schaltfläche ganz rechts in der unteren Symbolleiste ein- und ausgeschaltet werden.
+    Die Farbe der Schaltfläche zeigt an, ob das aktuelle Raster mit Worten gefüllt werden kann: Rot bedeutet, dass keine Füllung möglich ist, Grün, dass mindestens eine Füllung vorhanden ist und Grau, dass der Bereich bereits gefüllt ist oder die Füllbarkeit nicht einfach zu bestimmen ist.
+</p>
+<p>
+  Welche Dinge Gitterinblick genau überprüft, kann durch Klicken auf die Schaltfläche Gitterinblick angepasst werden:
+    <ul>
+    <li><b>Doppelte Wörter</b>: Jede exakte Wiederholung eines Wortes hebt beide Slots hervor</li>
+    <li><b>Doppelte Teilzeichenfolgen</b> (nur Pro Filler): während jede wiederholte Folge von Buchstaben über einer bestimmten Länge hervorgehoben wird</li>
+    <li><b>Wörter nicht in der Liste</b> hebt Rechtschreibfehler hervor, oder genauer gesagt Wörter, die nicht in Ihrer Wortliste enthalten sind</li>
+<li><b>Kein passendes Wort</b> hebt teilweise ausgefüllte Wortfelder hervor, in die kein Wort in der Liste passt</li>
+<li><b>Keine Kreuzung</b> hebt Paare von Wortfeldern hervor, bei denen keine Schnittmenge möglich ist, indem Wörter in der Wortliste verwendet werden</li>
+<li><b>Keine Gruppenkreuzungen</b> hebt Slots hervor, die nicht konsistent gleichzeitig mit nahegelegenen und sich überschneidenden Slots gefüllt werden können. Der Grund für diese Art von Fehler kann nicht vollständig lokalisiert werden, und es ist ein Fehler einer Mehrwort-Slot-Beschränkung.</li>
+<li><b>Erzwungene Buchstaben</b> zeigt alle Buchstaben, die durch alle möglichen Füllungen erzwungen werden, im Raster grau an</li>
+<li><b>Vollständige Füllung prüfen</b> testet, ob der gesamte verbundene ungefüllte Bereich ausfüllbar ist und aktualisiert die Farbe der Raster-Insight-Schaltfläche entsprechend. Das Zeitlimit für diese Prüfung kann festgelegt werden, sodass keine großen Mengen an Computerressourcen verschwendet werden, um Füllungen für nur teilweise abgeschlossene Raster zu finden.</li>
+</ul>
+Welche Wortliste Gitterinblick verwendet, kann durch Klicken auf das Einstellungssymbol oben rechts im Gitterinblick-Fenster angegeben werden (oder <a href="wordlistusage.htm">Listenverwendung ändern</a> im <b>Wörter</b> Speisekarte). Sie können entweder dieselbe Wortliste und dieselben Einstellungen für alle Ihre Rätsel verwenden oder die Einstellungen, die derzeit für die Gitterfüllung verwendet werden (eingestellt in <A HREF="gridfilling.htm">Gitter füllen</A>), anpassen.
+</p>
+
+</BODY>
+</HTML>
+<!--v11-->

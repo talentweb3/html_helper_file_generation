@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Interaktive Web Rätsel</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2><A NAME="cc5.cjc001"></A>Interaktive Web Rätsel</H2><div class="titleline"></div>
+
+<p>Wählen Sie&nbsp; <b>Web Export</b> im <b>Datei </b>Menü, und dann <b>Export
+in Dateien</b>, um ein Rätsel zur interaktiven Lösung auf einer Webseite zu
+exportieren. Nachdem Sie die Optionen gewählt haben, drücken Sie den <b>Export
+Webseite</b> Knopf, um einen Dateinamen zu wählen und die Webseite zu
+exportieren. Falls Sie das Rätsel direkt auf die Rätsellösseite uploaden
+wollen, verwenden Sie statdessen <a href="webpub.htm">Web
+Publish</a>.</p>
+
+<p>Crossword Compiler verwendet ein kleines Programm genannt&nbsp; <i>Java
+applet</i>, welches Sie auf Ihrer Internetseite nutzen können, damit Leute dort
+das Rätsel interaktiv lösen können. Sie können Buchstaben in das Gitter tippen
+und auf Kästchen klicken, um die dazugehörigen Hinweise hervorzuheben. Die
+Standardapp läuft auf den meisten Desktops, iPad und Android 4+ Tablets. Als
+Alternative dazu können Sie ein Java applet exportieren, das auf alten Browsern
+läuft, aber nicht kompatibel mit iPad ist.</p>
+
+<p>Das Programm bietet eine Vielzahl von Vorlagen: wählen Sie eine in der <b>HTML
+Vorlage</b> Box. Die HTML Vorlagen geben eine Zusammenfassung für die Webseite
+zusammen mit verschiedenen Einstellungen für die Export Optionen.&nbsp;</p>
+
+<p>Diese Exportoption erstellt eine Webseiten Datei und eine Rätseldatei. Diese
+müssen in denselben Ordner auf Ihrer Webseite hochgeladen werden. Schauen Sie
+im&nbsp; <a href="uploadingwebpages.htm">Webseiten
+hochladen</a> Thema nach Einzelheiten. </p>
+
+<p>Es gibt verschiedene Optionen im Exportfenster für interaktive Rätsel:&nbsp;</p>
+
+<p><b>HTML Vorlage</b></p>
+
+<p>Ändern Sie diese Einstellung um unterschiedliche Vorlagen für die zu
+erstellende Webseite zu verwenden. Schauen Sie im&nbsp; <a
+href="makingyourownhtmltemplates.htm">HTML Vorlagen</a>
+Thema, wie man eigene Vorlagen erstellt. Rechtsklicken Sie auf die drop down
+Box, um eine Vorlage zu löschen, eine Kopie einer Vorlage mit neuem Namen
+anzufertigen, oder um die Vorlage mit Standardexportoptionen, anstatt mit ihrem
+eigenen Optionen zu verwenden.&nbsp;</p>
+
+<p><b>Interaktive&nbsp;Hinweise</b></p>
+
+<p>Wählen Sie diese Option, um automatisch die entsprechenden Hinweise
+hervorzuheben, sobald jemand auf ein Kästchen im Gitter klickt, oder um das
+korrekte Wortfeld hervorzuheben, wenn jemand auf einen Hinweis in der
+Hinweisliste klickt. &nbsp;Wählen Sie <b>Text Hinweise</b> wenn Sie statische
+Hinweise wollen.</p>
+
+<p><b>Lösungslink</b></p>
+
+<p>Erstellt einen Link zu einem GIF Bild der Lösung.&nbsp;</p>
+
+<p><b>Nummerierter Lösungslink</b></p>
+
+<p>Erstellt einen Link zu einem GIF Bild der Lösung</p>
+
+<p><b>Lösungsinformation&nbsp;</b></p>
+
+<p>Markieren Sie diese Option, um Lösungsinformationen einzuschließen (für die
+Lösung markieren Sie die &quot;Zeigen&quot; Knöpfe). Wenn diese Option im
+Rätsel nicht markiert ist, wird die Datei keine Lösungsinformationen enthalten
+und so für ein Preisrätsel sicher genug sein. Sie müssen diese Option
+markieren, wenn Sie eine Abschlussbotschaft nur bei richtiger Lösung anzeigen
+wollen. (Schauen Sie auch im <a
+href="javaappletproperties.htm">Java
+Anwendungseigenschaften</a> Thema).</p>
+
+<p><b>Lösung bekommen</b></p>
+
+<p>Klicken Sie diesen Knopf, um die Lösung des aktuellen Rätsels in die
+Zwischenablage zu kopieren. Dies ist der Text der vom &quot;Übertragen&quot;
+Knopf der Anwendung ausgegeben wird, also klicken Sie diesen Knopf um zu sehen,
+wie die korrekte Übertragung aussehen sollte.&nbsp;</p>
+
+<p><b>Knöpfe</b></p>
+
+<p>Die Anwendung kann verschiedene Knöpfe anzeigen, die dem Lösenden einige
+Extra-Optionen geben. Wählen Sie welche Knöpfe Sie zeigen wollen. Der <b>Aufdecken</b>
+Knopf ist ein Mogelknopf, der die Antwort zum aktuellen Hinweis zeigt. <b>Buchstabe
+zeigen</b> zeigt nur den aktuell gewählten Buchstaben, und&nbsp; <b>Lösung</b>
+zeigt die ganze Lösung. Der <b>Zurück</b> Knopf setzt das Puzzle zum letzten
+gespeicherten Stand zurück (normalerweise komplett leer). Der <b>Prüfen</b>
+Knopf löscht alle vom Lösenden falsch eingesetzten Buchstaben im Gitter.&nbsp;
+Der&nbsp; <b>Übertragen</b> Knopf übermittelt die Lösung des Lösenden, und der <b>Speichern
+</b>Knopf speichert den aktuellen Fortschritt des Lösenden.&nbsp; </p>
+
+<p>Der <b>Übertragen</b> Knopf benötigt zusätzliche fortgeschrittene Arbeiten
+durch den Webseiten Manager: Sie müssen ein&nbsp; web Script zur Verfügung
+stellen, um die übertragenen Daten zu behandeln. Stellen Sie das Script URL
+unter den <b>Applet Optionen</b> ein. Sie können auch Ihr eigenes Script für
+die Verarbeitung der Speichern Funktion verwenden. AlsStandardeinstellung(falls
+die URL leer ist), wird es in einem Cookie am Computer des Users gespeichert.</p>
+
+<p>Wenn Sie die&nbsp; <b>Aufdecken</b>, <b>Buchstabe zeigen</b>, <b>Lösung </b>oder
+<b>Prüfen</b> Knöpfe nutzen wollen, müssen Sie die <b>Lösungsinformation </b>einschließen.&nbsp;
+</p>
+
+<p>Die Knöpfe können links oder unter dem Gitter sein, und Sie können die
+Knopfuntertitel ändern.&nbsp; Schauen Sie &nbsp;in den <a
+href="javaappletproperties.htm">Java
+Anwendungseigenschaften</a> nach Details.</p>
+
+<p><b>Kästchengröße</b></p>
+
+<p>Ändert die Kästchengröße jedes Kästchens im Gitter in Pixeln. Dies
+beeinflusst indirekt auch die Breite und Höhe des Gitters, also stellen Sie
+sicher, dass die Kästchen nicht so groß sind, dass das Gitter nicht mehr auf
+der Seite sichtbar ist.&nbsp;&nbsp;</p>
+
+<p><b>Hinweisfont Größe</b></p>
+
+<p>Ändert die Größe der Anzeige der interaktiven Hinweise&nbsp; verwendeten
+Font.&nbsp;</p>
+
+<p><b>Applet Optionen</b></p>
+
+<p>Klicken Sie diesen Knopf, um die verschiedenen Aspekte des Java Applet zu
+individualisieren.&nbsp; Schauen Sie im&nbsp; <a
+href="javaappletproperties.htm">Java
+Anwendungseigenschaften</a> Thema nach mehr Informationen. Für fortgeschrittene
+Individualisierungsoptionen schauen Sie im&nbsp; <a
+href="appletparameters.htm">Anwendungsparameter</a> Thema.</p>
+
+<p><b>Optionen der Vorlage speichern</b></p>
+
+<p>Klicken Sie diesen Knopf, um Exportoptionen für die Wiederverwendung mit der
+Vorlage zu sichern. Dies erlaubt Ihnen, verschiedene Optionen mit verschiedenen
+Vorlagen zu verbinden, um Export zu Webseiten mit verschiedenen Layouts zu
+vereinfachen.</p>
+
+<p><b>Optionen als Standard speichern&nbsp;</b></p>
+
+<p>Klicken Sie diesen Knopf, um diese Exportoptionen mit allen HTML Vorlagen,
+die nicht ihre eigenen Einstellungen gespeichert haben, zu
+verwenden.&nbsp;&nbsp;</p>
+
+<p><b>HTML Exportoptionen</b></p>
+
+<p>Markieren Sie die&nbsp; <b>Hinweise in einem Abschnitt</b> Box um alle
+Hinweise in einen Absatz anstatt in separate Zeilen zu schreiben.&nbsp;&nbsp;
+Wenn <b>Font Info einschließen </b>ausgewählt ist, wird die Webseite den Font,
+den Sie für die Hinweise unter <a href="clueproperties.htm">Hinweiseigenschaften</a>
+&nbsp;festgelegt haben, verwenden (Bedenken Sie, dass dieser Font bei Personen
+Ihre Webseite anschauen eventuell nicht verfügbar ist). Wählen Sie&nbsp; <b>Kleine
+Hinweisabstände </b>, um Hinweise nur durch einen Zeilenumbruch anstatt eines
+Absatzes voneinander zu trennen. Wählen Sie <b>Monochrome GIFs</b> , um
+schwarz/weiße Bilder für das Gitter zu verwenden, was die Ladezeit reduziert, da
+Ihr Gitter keine Farben enthält.&nbsp;</p>
+
+<p><b>Gittereigenschaften </b>und <b>Hinweiseigenschaften</b></p>
+
+<p>Diese Knöpfe sind eingebaut, damit Sie die <a
+href="gridproperties.htm">Gitter</a> und <a
+href="clueproperties.htm">Hinweis</a> Eigenschaften leicht
+ändern können. &nbsp;Diese Einstellungen sind nicht in der HTML Vorlage
+gespeichert, sondern in der <a href="crosswordtemplates.htm">Rätselvorlage</a>.</p>
+
+<p><b>Hinweis Tipp URLs</b> </p>
+
+<p>Wählen Sie diese Option, um Hyperlinks nach jedem Hinweis zu zeigen, der
+eine Tipp URL eingestellt hat (schauen Sie im <a
+href="clueeditor.htm">Hinweis Editor</a> , wie man einen
+URL Tipp einstellt - in der Erklärung/Zitate/URL Option). Dies erlaubt den
+Lösenden, einen Link in einem Fenster zu öffnen, zum Beispiel mit
+Informationen, die bei der Lösung des Hinweises helfen.</p>
+
+<p>Verwenden der App mit Java Script und Individualisieren mit CSS</p>
+
+<p>Lesen Sie mehr im Thema <a href="appletparameters.htm">Applet
+Parameter</a></p>
+
+</body>
+
+</html>

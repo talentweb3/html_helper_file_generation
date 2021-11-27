@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META charset="utf-8">
+<TITLE>Überschriften drucken </TITLE>
+</HEAD>
+
+<BODY>
+
+
+
+<H2><A NAME="headers"></A>Überschriften drucken </H2><div class="titleline"></div>
+
+<P>Wählen Sie  <B>Überschriften... </B>  vom  <B>Datei </B> Menü, um die Überschriften beim <A HREF="printingthepuzzle.htm"> Drucken</A> eines Rätsels einzustellen</P>
+
+<P>Sie können rechts oder links Überschriften, und darunter eine Überschrift die waagerecht über die Seite geht haben. Die rechten und linken Überschriften sind eine halbe Seite breit, und nützlich wenn Sie Text links und rechts mit denselben Abständen die Seite hinunter haben wollen.</P>
+
+<P>Wenn Sie möchten, können Sie zwei verschiedene Überschriften haben - je nachdem was Sie gerade ausdrucken. Wählen Sie einfach die  <B>Beide Überschriften gleich</B> Check Box ab, und klicken auf die <B> Überschrift A</B> oder <B>Überschrift B</B> Spalte, um die entsprechenden Überschriften zu bearbeiten. Sie können dann die Überschrift, die Sie verwenden wollen beim Drucken des Rätsels auswählen. </P>
+
+<P>Wählen Sie Einstellung und Font Stile in jeder Überschrift, indem Sie die Knöpfe der Werkzeugleiste verwenden. </P>
+
+<P>Wenn Sie mit der Bearbeitung der Überschriften fertig sind, drücken Sie <B>OK</B>, um die Überschriften mit dem aktuellen Rätsel zu verbinden. Klicken Sie den <B>Als Standardüberschrift speichern</B> Knopf, um die Überschriften mit allen Rätseln, die nicht ihre eigene Überschrift haben, zu speichern. Wenn Sie die Standardüberschrift mit einem bestimmten Rätsel verwenden wollen, klicken Sie einfach den  <B>Standardüberschrift setzen</B> Knopf. Wenn Sie eine nicht standardmäßige Überschrift für einige Rätsel nehmen wollen, dann Speichern Sie Ihr Rätsel (mit seinen Überschriften) als <A HREF="crosswordtemplates.htm"> Vorlage</A> zur Verwendung mit neuen Rätseln ab. </P>
+
+<P>Sie wollen Überschriften vielleicht individualisieren, um gleichbleibenden Text (wie Beispielsweise Ihr Name und Ihre Adresse) oder variable Daten ( wie Rätseldetails) anzugeben. Um gleichbleibenden Text zu liefern, tippen sie diesen Text einfach in eine der Überschriften Boxen ein. Um variablen Text zu liefern, nutzen Sie einen oder mehrere dieser Kontrollcodes, beginnend mit '%'.</P>
+
+<TABLE  border=0 cols=4 >
+
+<TR VALIGN="top">
+<TD width=10%>%T</TD>
+<TD width=40%>Rätseltitel</TD>
+<TD width=10%>%A</TD>
+<TD width=40%>Rätsel Autor</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%C</TD>
+<TD width=40%>Rätsel Copyright</TD>
+<TD width=10%>%I</TD>
+<TD width=40%>Rätselbeschreibung </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%D</TD>
+<TD width=40%>Tag des Monats</TD>
+<TD width=10%>%W</TD>
+<TD width=40%>Rätselbreite</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%M</TD>
+<TD width=40%>Monat des Jahres</TD>
+<TD width=10%>%H</TD>
+<TD width=40%>Rätselhöhe</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%Y</TD>
+<TD width=40%>Jahr (abgekürzt z.B.. '95')</TD>
+<TD width=10%>%N</TD>
+<TD width=40%>Anzahl der Worte im Rätsel</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%%</TD>
+<TD width=40%>Die Prozentanzeige '%'</TD>
+<TD width=10%>%B</TD>
+<TD width=40%>Anzahl der Blöcke und Hinweiskästchen</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%P</TD>
+<TD width=40%>Rätseldatei- und Pfadname</TD>
+<TD width=10%>%F</TD>
+<TD width=40%>Rätseldateiname</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=10%>%G </TD>
+<TD width=40%>Anzahl der ausgedruckten Seiten</TD>
+<TD width=10%>&nbsp;</TD>
+<TD width=40%></TD>
+</TR>
+</TABLE>
+<BR>
+Sie können Kontrollcodes auch durch Klicken auf das Buch Symbol am ganz linken Ende der Werkzeugleiste einfügen. Wenn das Rätsel ausgedruckt wird, werden die Kontrollcodes durch den Text, den sie repräsentieren ersetzt, im Font und Stil den Sie für die Kontrollcodes verwendet haben.  
+<P>Einige Beispiele:</P>
+
+<TABLE style="width:35em" border=0 cols=2>
+
+<TR VALIGN="top">
+<TD width=50%><b>Die Überschrift die Sie wollen</b></TD>
+<TD width=50%><b>Was Sie eintippen</b></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=50%>
+<P>12 x 15 Rätsel: Beispielrätsel</P>
+</TD>
+<TD width=50%>
+<P>%W x %H Rätsel: %T</P>
+</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=50%>Antony Lewis 10/5/02</TD>
+<TD width=50%>%A %D/%M/%Y</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=50%>Datei Name: <B>DEMOPUZ.CCW</B></TD>
+<TD width=50%>Datei Name:<B>%F</B></TD>
+</TR>
+</TABLE><BR>
+Der Rätseltitel, Autor, Copyright und Beschreibung werden in der <A HREF="puzzleinformation.htm"> Rätselinformation </A> Box eingegeben. Codes sind besonders nützlich in Verbindung mit diesen Einstellungen, da sie erlauben, die Überschrift nur einmal einzustellen, und dann Titel, Autor, etc. jedes mal, wenn Sie ein neues Rätsel erstellen, leicht zu ändern.
+</BODY>
+</HTML>

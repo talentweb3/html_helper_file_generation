@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>Anwendungsparameter</TITLE>
+</HEAD>
+
+<BODY>
+
+<h2>Anwendungsparameter</h2>
+
+<p>Die XML Datei wird vom Crossword Compiler als einen .js Datei exprotiert,
+die einen Java Script String enthält, der „CrosswordPuzzleData“ heißt. Die App
+wird von JavaScript auf Ihrer Webseite mit einer #id aufgerufen, die die id
+eines DIV Elements enthält, das wiederum den aktuellen Inhalt der App enthält
+(als Beispiel betrachten Sie bitte die Standardausgabe des Crossword
+Compilers). Der Hauptstring hat diese Form:</p>
+
+<BLOCKQUOTE>
+<span
+lang=EN-US style='font-size:20.0pt;line-height:115%'>$(<span style='color:red'>“#id”</span>)
+.<span style='color:#548DD4'>CrosswordCompiler</span>(<b><i><span
+style='color:#92D050'>1</span></i></b>,<b><i><span style='color:#548DD4'>2</span></i></b>,<b><i><span
+style='color:#E36C0A'>3</span></i></b>);</span>
+</BLOCKQUOTE>
+
+<ol type="1">
+<li>DieserParameter muss einen String, der XML Daten ist enthalten. Er Ist ERFORDERLICH.
+Der Standardwert ist „CrosswordPuzzleData“</li>
+
+<li>Dieser
+Parameter enthält ein JSON Array um die Standardbilder (diese werden mit den
+App Daten mitgeliefert) oder die graphischen Buttons zu überschreiben. Falls
+Sie die Bilder nicht überschreiben müssen, muss der Wert auf null gesetzt
+werden. Beachten Sie bitte dass Sie, falls Sie myImage.png spezifizieren, Sie
+auch ein myImage_2x.png für Bildschirme mit einer höheren Auflösung (z.B. iPad)
+am gleichen Ort zur Verfügung stellen müsen. Beispiel:</li>
+
+<p   style='margin-left:18.0pt;text-align:center;
+text-indent:17.4pt'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>{“reveal-word”:
+”<span style='background:#bad2eb'>path to image</span>”, “reveal-letter”: ”<span
+style='background:#bad2eb'>path to image</span>”,</span></p>
+
+<p   style='margin-left:18.0pt;text-align:center;
+text-indent:17.4pt'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>“revert”:
+”<span style='background:#bad2eb'>path to image</span>”, “solution”: “<span
+style='background:#bad2eb'>path to image</span>”,</span></p>
+
+<p  style='margin-left:18.0pt;text-align:center;
+text-indent:17.4pt'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>“check”
+: “<span style='background:#bad2eb'>path to image</span>”, “pencil”: “<span
+style='background:#bad2eb'>path to image</span>”,</span></p>
+
+<p   style='margin-left:18.0pt;text-align:center;
+text-indent:17.4pt'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>“submit”
+: “<span style='background:#bad2eb'>path to image</span>”, “save” : “<span
+style='background:#bad2eb'>path to image</span>” }</span></p>
+<LI></li>
+</ol>
+<table class= border=1 cellspacing=0 cellpadding=0
+ style='margin-left:38.25pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b>
+  lang=ES-MX style='font-size:12.0pt'>PARAMETER</b></p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'><b>
+  WERT</b></p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'><b>
+  style='font-size:12.0pt'>BESCHREIBUNG</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  BACKCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Hintergrundfarbe</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'> lang=ES-MX
+  SELCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für diemarkeirten Zellen.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  URLCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für url und Hinweise</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  CLUEURLTARGET</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  STRING</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  HINTURLTEXT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Text, der in der url stehen soll, der Standard ist
+  “?”</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  CLUECOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für die Hinweise</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  FINISDHEURL</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  FINISHEDURLFRAME</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  COMPLETITIONPICTURE</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  COMPLETITIONPICTUREURL</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  COMPLETITIONPICTUREURLFRAME</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  MAXCHEATS</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  Jede Zahl &gt; 0</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Die Höchstzahl der erlaubten Schummelversuche</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SCROLLWIDTH</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  Jede Zahl &gt; 0</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SCROLLHEIGHT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  Jede Zahl &gt; 0</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SUBMIT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Url für submit</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SUBMITMETHOD</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SUBMITFRAME</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  string</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SAVE</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Url furs Speichern</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  GRIDBACKCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Hintergrundfarbe des Gitters</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  WRONGCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für falsche Buchstaben</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  GRIDCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Gitterfarbe</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  BLOCKCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für die Blöcke im Gitter</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  FONTCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für Font in den Feldern</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  NUMCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für Zahlen in den Feldern</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  CURCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für das aktive Feld</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  REVEALEDCOLOR</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  In Html gültige Farbe</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Farbe für aufgezeigte Felder</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  COMPLETECORRECT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Nur wenn es richtig ist</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  FRIENDLYSUBMIT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Friendly Submit</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  SHOWSOL</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  True oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Beim Starten Lösung zeigen </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  TITLE</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  COPYRIGHT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  &nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  PROGRESS</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  String</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Fortschritt laden.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  TIMEFROMLOAD</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Timer beim Laden.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  STARTIME</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  Jede Zahl &gt; 0</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Startwert des Timers.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  TIMER</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Timer ermöglichen</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  NOPAUSE</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  User Timer unterbrechen</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  TITLEHEIGHT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  Jede Zahl &gt;0</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Höhe der Überschrift</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=242 valign=top style='width:181.85pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  TITLELEFT</p>
+  </td>
+  <td width=148 valign=top style='width:111.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:normal'>
+  true oder false</p>
+  </td>
+  <td width=162 valign=top style='width:121.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:normal'>
+  Titel links ausrichten</p>
+  </td>
+ </tr>
+</table>
+
+</UL>
+<P>
+<B>URL Format</B>
+<p>Each URL given for a puzzle can
+contains placeholders to be replaced with data from the puzzle. The following list describes them:</p>
+
+<table class= border=1 cellspacing=0 cellpadding=0 width=621
+ style='width:466.1pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %SUBMIT%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> Wird
+  beim Abarbeiten durch den Wert “Friendly Submit” ersetzt</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %MARKED%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> Wird beim
+  Abarbeiten der Plus Marke für die Antworten ersetzt</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %PROGRESS%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> Wird
+  beim Abarbeiten Rätsel ersetzt</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %TIME%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> Wird
+  durch Zeit in Sekunden ersetzt</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %CHARSET%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> durch
+  Charset ersetzt</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=199 valign=top style='width:149.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> %KEYWORD%</p>
+  </td>
+  <td width=422 valign=top style='width:316.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p  align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'> Wird
+  durch Schlüsselworte ersetzt</p>
+  </td>
+ </tr>
+</table>
+
+<H2><A NAME="css"></A>Anpassen
+von JavaScript und CSS</H2><div class="titleline"></div>
+<p>
+    In addition to changing options using the applet settings and parameters above, you can also access some functions of the puzzle applet at runtime using JavaScript,
+and customize certain aspects of the default display using CSS. Javascript  functions are available from the <B>CrossWord</B> object of the DIV element containing the puzzle, e.g.
+</p>
+
+<pre>
+getElementById('CrosswordCompilerPuz').CrossWord
+</pre>
+<UL>
+<LI><b>Buttonfunktion per Programm aufrufen</B><BR>
+Sie können die Buttonfunktionen aufrufen, indem Sie das ButtonAktionen
+Element des Gitters verwenden. Dieses JavaScript macht z.B. dasselbe , wie der
+User, der auf den Reveal Knopf drückt.
+<pre>
+getElementById('CrosswordCompilerPuz').CrossWord.Grid.ButtonActions['reveal-letter']();
+</pre>
+<br>
+<LI><b>Rätsel Status verwenden</B><BR>
+Das globale Element PuzzleState kann verwendet werden, um den Status des
+aktuellen Rätsel zu adressieren oder zu ändern.
+<UL>
+<LI><b>getElementById('CrosswordCompilerPuz').CrossWord.PuzzleState.GetProgressString(friendly, encoded)</b> gibt den aktuellen Fortschritt
+      im Gitter (eingesetzte Buchstaben) wieder. z.B.. PuzzleState.GetProgressString(true,
+      true); zeigt das Friendly submit Format (siehe oben) und URL verschlüsselt
+      die Einträge.
+<LI><B>getElementById('CrosswordCompilerPuz').CrossWord.PuzzleState.GetTime()</B> gibt die aktuelle Lösungszeit wieder
+<LI><b>getElementById('CrosswordCompilerPuz').CrossWord.PuzzleState.PuzzleCompleted</b> ist eine Funktion (ohne Parameter) damit Sie die
+      Standardfunktion überschreiben können, die beim Ende eines Rätsel läuft..
+</UL>
+<br>
+
+<LI><b>Anpassen von Farben mit StyleSheets (CSS)</b><BR>
+Zahlreiche Elemente eines Rätsels können mittels CSS adressiert werden, indem
+zahlreiche Elementklassen spezifizeirt werden.
+<UL>
+<LI><b>Clues</b> ist der Block der Hinweise, <b>ClueHeading</b> ist der
+waagrecht/senkrecht Label, <b>ClueText</b> ist der Text eines Hinweises und <b>ClueNumber</b> ist die Nummer. Z.B.: den Hinweisetext blau einfärben
+<pre>
+.Clues .ClueText{
+ color:blue;
+}
+</pre>
+Der Status ändert auch eine ungegeordnete Klasse, daher können Sie auch <b>.Completed</b> verwenden und
+<pre>
+.Clues .Completed .ClueText{
+ text-decoration: line-through;
+ color:yellow;
+}
+</pre>
+</UL>
+Zur Zeit ist eine ähnliche Anpassung für das Gitter nicht leicht möglich.
+<br>
+<LI><b>Verwenden von benutzerdefinierten
+graphischen Buttons with CSS</b><Br>
+<p>Zusätzlich zum Überschreiben von Bildernamen wie oben beschrieben, können
+Sie das auch mittels CSS machen, indem Sie die gewünschten Buttons mit <b>.CCPuzButtons.action-name</b> arbeiten. Das
+wird zum Beispiel den Namen des gewählten Icons ändern</p>
+<pre>
+.CCPuzButtons .reveal-word{
+ background:url(myImage.png) no-repeat;                 
+}
+</pre>
+Beachten Sie bitte, dass Sie für hochauflösende Bildschirme eine
+myImage2x.png Datei zur Verfügung stellen und in den CSS die hochauflösende
+Icon Version spezifizieren müssen. z.B.:
+<pre>
+@media (-webkit-min-device-pixel-ratio: 2),(min-resolution:2dppx),(min-resolution: 192dpi) {
+.CCPuzButtons .reveal-word{
+ background:url(myImage_2x.png) no-repeat;                  
+}}
+</pre>
+</UL>
+
+
+</BODY>
+</HTML>

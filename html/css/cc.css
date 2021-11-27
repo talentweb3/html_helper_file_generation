@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fontawesome/webfonts/fa-solid-900.eot");
+  src: url("../fontawesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fontawesome/webfonts/fa-solid-900.woff2") format("woff2"), url("../fontawesome/webfonts/fa-solid-900.woff") format("woff"), url("../fontawesome/webfonts/fa-solid-900.ttf") format("truetype"), url("../fontawesome/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+body{
+  color: black;
+  font-family: "Arial","sans-serif";
+  font-size: 14px;
+}
+body > h2
+{
+ font-family: "Times New Roman","serif";
+ line-height: 1.6;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-weight: bold;
+}
+body > h2:first-child
+{
+ color: #9A4E4E;
+}
+/*a
+{
+ color:#528fcc;
+ text-decoration: none;
+}
+a:hover,a:focus
+{
+ color:#1f5c99;
+ text-decoration: underline;
+}*/
+p
+{
+  color: black;
+  font-family: "Arial","sans-serif";
+  font-size: 14px;
+  line-height: 1.8;
+}
+/*.titleline
+{
+position: relative;
+max-width: 200px;
+border-top: 1px solid #528fcc;
+margin: 0 auto 30px 0;
+}
+.titleline::after
+{
+position: absolute;
+top: -3px;
+left: 0;
+right: 70%;
+content: '';
+border-top: 5px solid #528fcc;
+}*/
+table
+{
+ width:85%;
+ margin-left: 10px;
+}
+tr
+{
+vertical-align:top;
+}
+td
+{
+  padding:2px;
+  line-height:1.6;
+  color: black;
+  font-family: "Arial","sans-serif";
+  font-size: 14px;
+}
+
+
+ul{
+  list-style-type: none;
+}
+li{
+  line-height: 1.6;
+  color: black;
+  font-family: "Arial","sans-serif";
+  font-size: 14px;
+}
+
+/*ul > li::before
+{
+content: '\f138';
+display: inline-block;
+font-family:'Font Awesome 5 Free' ;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+margin-right: 8px;
+color: #528fcc;
+}
+*/

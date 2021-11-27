@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" charset="utf-8">
+<TITLE>HTML Vorlagen</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2><A NAME="htmltem"></A>HTML Vorlagen</H2><div class="titleline"></div>
+
+<p>Crossword Compiler kann <a href="interactivecrosswords.htm">interaktive</a> oder <a
+href="printablewebpage.htm">druckbare</a> Webseiten
+exportieren, die das Gitter und Hinweise vom aktuellen Rätsel enthalten. Dazu
+benutzt es eine Dateivorlage, die Sie modifizieren können, um das Aussehen der
+produzierten Webseite zu ändern. Beispielsweise möchten Sie vielleicht die
+Hintergrundfarbe ändern und einen Link zu Ihrer Homepage einfügen.</p>
+
+<p>HTML Vorlagen werden im Crossword Compiler Vorlagen Ordner gespeichert und
+müssen die .HTML Erweiterung haben. Sie können die Datei mit einem Text Editor
+wie Notepad bearbeiten, oder einen anderen geeigneten HTML Editor wenn Sie
+einen haben.</p>
+
+<p>Um die Webseite von einem Kreuzworträtsel zu erzeugen, ersetzt das Programm
+verschiedene Platzhalter in der Vorlage mit den entsprechenden Inhalten vom
+aktuellen Kreuzworträtsel. Beispielsweise, &lt;CCCLUES&gt; wird durch die
+Hinweise (inklusive waagerecht/senkrecht Überschriften) ersetzt. Schauen Sie
+sich die Standardvorlage an, um ein Beispiel zu sehen. </p>
+
+<p>Die allgemeine Platzhaltersyntax ist &lt;CCxxxx&gt; wobei xxxx in
+Großbuchstaben sein muss. Sie können die folgenden Platzhalter verwenden:&nbsp;<o:p></o:p></p>
+
+<TABLE border=0 cols=2 >
+
+<TR VALIGN="top">
+<TD width=33%>&lt;CCTITLE&gt;</TD>
+<TD width=67%>Rätseltitel&nbsp;
+  (siehe <a href="puzzleinformation.htm">Rätselinformation</a>)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCCOPYRIGHT&gt;</TD>
+<TD width=67%>Rätsel Copyright</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCAUTHOR&gt;</TD>
+<TD width=67%>Rätsel Autor</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCDESCRIPTION&gt;</TD>
+<TD width=67%>Rätsel Beschreibung</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCCLUES&gt;</TD>
+<TD width=67%>Alle Hinweises</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCGRIDCLUECOLUMNS&gt;</TD>
+<TD width=67%>Eine Tafel mit dem
+  Gitter und Hinweisen in Spalten</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCACROSSCLUES&gt;</TD>
+<TD width=67%>Nur die waagerechten
+  Hinweise (mit der waagerecht Überschrift)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCDOWNCLUES&gt;</TD>
+<TD width=67%>Nur die senkrechten
+  Hinweise (mit der senkrecht Überschrift)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCJAVAAPP&gt;</TD>
+<TD width=67%><a
+  href="interactivecrosswords.htm">Java applet</a> einfügen </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCENDJAVAAPP&gt;</TD>
+<TD width=67%>Das Rätselgitter, in
+  der Form&nbsp; &lt;IMG SRC=....&gt; </TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCPUZZLE&gt;</TD>
+<TD width=67%>Das Rätselgitter, in
+  der Form&nbsp; &lt;IMG SRC=....&gt;</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCSOLUTION&gt;</TD>
+<TD width=67%>Des Rätsels Lösung,
+  in der Form &lt;IMG SRC=...&gt;</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCSOLUTIONURL&gt;</TD>
+<TD width=67%>Der Dateiname des
+  Lösungsgitters&nbsp; (z.B. &quot;MeinRätsel.GIF&quot;)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCCODEGRID&gt;</TD>
+<TD width=67%>Codegitter für
+  kodierte Rätsel</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCCODESOLUTION&gt;</TD>
+<TD width=67%>Code Lösung für ein
+  kodiertes Rätsel</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCFILEROOT&gt;</TD>
+<TD width=67%>Der Ursprungsname
+  der HTML Datei (z.B. &quot;MeinRätsel&quot;)</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCDAY&gt;</TD>
+<TD width=67%>Der Tag</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCMONTH&gt;</TD>
+<TD width=67%>Der Monat</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCYEAR&gt;</TD>
+<TD width=67%>Das Jahr</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCFONT&gt;</TD>
+<TD width=67%>Der Hinweisfont in
+  der Form &lt;FONT FACE=.... SIZE=...&gt;</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%> &lt;CCENDFONT&gt;</TD>
+<TD width=67%>Das Ende des
+  Hinweisfonts, &lt;/FONT&gt;</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%>&lt;CCJAVAAPPWIDTH&gt;</TD>
+<TD width=67%>Breite des Java
+  Applet</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%>&lt;CCJAVAAPPHEIGHT&gt;</TD>
+<TD width=67%>Höhe des Java Applet</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=33%>&lt;CCPDFURL&gt;</TD>
+<TD width=67%>Link zur PDF Datei</TD>
+</TR>
+</TABLE>
+
+<P>Es gibt auch den allgemeinen Platzhalter&nbsp;</P>
+
+<P>&lt;CCPROMPT This will be the prompt&gt;</P>
+
+<p>Sie können jeden beliebigen Text an Stelle von&nbsp; “This will be the
+prompt” wählen. Beim Exportieren werden Sie in einem Fenster gefragt, welchen
+Text sie hier eingeben wollen. Wenn Sie dies eingeben, wird der gesamte
+&lt;CCPROMPT xxx&gt; mit Ihrem Text ersetzt. Verwenden Sie dies, um zusätzliche
+individuelle Elemente zu der Webseite hinzuzufügen, vielleicht die
+Gitterseriennummer, extra Informationen, etc.&nbsp;&nbsp;</p>
+
+<p>Wenn Sie ein <a href="interactivecrosswords.htm">interaktives
+Rätsel</a> exportieren, sollten Sie&nbsp; &lt;CCJAVAAPP&gt; verwenden. Danach
+sollte der Text den Sie zeigen wollen eingegeben werden, wenn Java Applets bei
+der &nbsp;Betrachtung der Webseite nicht aktiviert sind. Es muss einen&nbsp;
+&lt;CCENDJAVAAPP&gt;Titel geben.</p>
+
+<p>Es gibt auch ein Set abhängiger Elemente. Diese müssen in Paaren auftreten,
+mit einer Syntax von der Form&nbsp;</p>
+
+<p>&lt;CCIFxxxx&gt; Eintrag hier &lt;/CCIFxxx&gt;</p>
+
+<p>Der &quot;Eintrag hier&quot; wird nur in die Webseite eingetragen, wenn xxxx
+wahr ist. Sie können die folgenden abhängigen Elemente verwenden:&nbsp;&nbsp;<o:p></o:p></p>
+
+<TABLE style="font-size: 11pt;" border=0 cols=2 frame=box rules=all width=612>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFTITLE&gt;</TD>
+<TD width=65%>wahr wenn das Rätsel
+  einen Titel hat</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFAUTHOR&gt;</TD>
+<TD width=65%>wahr wenn das Rätsel
+  einen Autor hat</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFCOPYRIGHT&gt;</TD>
+<TD width=65%>wahr wenn das Rätsel
+  ein Copyright hat</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFDESCRIPTION&gt;</TD>
+<TD width=65%>wahr wenn das Rätsel
+  eine Beschreibung hat</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFCLUES&gt;</TD>
+<TD width=65%>wahr wenn Hinweise
+  eingeschlossen werden</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFJAVA&gt;</TD>
+<TD width=65%>wahr wenn die
+  Vorlage aus einem <a href="interactivecrosswords.htm">Interaktiven
+  Export</a>&nbsp;aufgerufen wurde</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFPDF&gt;</TD>
+<TD width=65%>wahr wenn PDF Link
+  eingeschlossen ist</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFPUZZLE&gt;</TD>
+<TD width=65%>wahr wenn das Rätsel
+  eingeschlossen wird</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFSOLUTION&gt;</TD>
+<TD width=65%>wahr wenn die Lösung
+  eingeschlossen wird</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFCODED&gt;</TD>
+<TD width=65%>wahr wenn die <a
+  href="gridproperties.htm">Gitternummerierung</a> nach
+  Buchstabe erfolgt.</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFHASACROSSDOWN&gt;</TD>
+<TD width=65%>wahr wenn <a
+  href="clueproperties.htm">Hinweisnummerierung</a> normal
+  oder nach Position erfolgt.</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%>.&lt;CCIFBUTTONS&gt;</TD>
+<TD width=65%>
+  wahr wenn Java
+  Export mit Knöpfen im Applet erfolgt</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=35%> &lt;CCIFGRIDCLUECOLUMNS&gt;</TD>
+<TD width=65%>wahr wenn eine
+  Tafel&nbsp; mit dem Gitter und Hinweisen eingeschlossen ist</TD>
+</TR>
+</TABLE>
+
+
+<p>Sie können auch entsprechende&nbsp; &lt;CCIFNOxxx&gt; Elemente einschließen,
+wenn das Gegenteil wahr ist.&nbsp;</p>
+
+<p>Die &lt;CCFONT&gt; und &lt;CCENDFONT&gt; werden gelöscht, wenn die <b>Fontinfo
+einschließen</b> Option nicht ausgewählt ist.</p>
+
+<p>Sie können mehrere verschiedene Vorlagen erstellen wenn Sie möchten.
+Speichern Sie sie einfach alle in den Crossword Compiler Vorlagenordner und
+wählen die Vorlage die Sie verwenden wollen, wenn Sie eine Webseite
+exportieren.&nbsp;</p>
+
+</BODY>
+</HTML>

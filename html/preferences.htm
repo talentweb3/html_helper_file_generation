@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Preferences</TITLE>
+</HEAD>
+
+<BODY style="font-size: 11pt; font-family: Arial, Helvetica, Sans-serif;" BGCOLOR="#FFFFFF" TEXT="#000000">
+
+
+
+<H2><A NAME="preference"></A>Preferences</H2><div class="titleline"></div>
+
+<P>You can customize various aspects of how Crossword Compiler behaves by selecting <B>Preferences...</B> from the <B>Options</B> menu. There are four pages of settings that you can change. The settings are global to all your crosswords, and you can save the settings as the default for each time you run Crossword Compiler by clicking the <B>Save as default</B> box at the bottom of the window.</P>
+
+<H3>Options</H3>
+
+<blockquote>
+  <p><B>Opening and Saving</B></p>
+
+  <!--v11-->
+  <p>Select <B>Create backup files</B> to save the old file with a .BAK extension each time you save a file.
+  The <b>Auto-save recovery files</b> option will allow Windows restarts (e.g. for updates) without prompting to save opened files (automatically re-opening them when the program is next opened), and generate auto-load recovery files in the case of a crash. You can customize how frequently the recovery files are saved.
+  </p>
+  <!--v11-->
+  <p>
+  Select the <B>Show information on open</B> option to show the <A HREF="puzzleinformation.htm">Information</A> dialog box whenever you open an existing crossword.</p>
+  <p><B>AutoFind on complete word</B></p>
+  <p>This setting determines what <A HREF="autoFind.htm">AutoFind</A> will do when invoked on a complete word. Select <B>See if word is in list</B> to just spell check the word—the word either will or wont be in the word list, and either will or wont be displayed. Select <B>Find alternative words that would fit</B> to find all the other words that could replace the word in the grid without affecting the letters that are part of intersecting words.</p>
+</blockquote>
+<H3>Display</H3>
+
+<blockquote>
+  <p><B>Colors</B></p>
+  <p>You can change the color used for the grid cursor (when it's on a letter square), and for selected squares. </p>
+  <p><B>Font for displaying words in lists</B></p>
+  <p>Click the <B>Change font…</B> button to change the font that is used in the <A HREF="autoFind.htm">AutoFind</A>, <A HREF="findingwords.htm">Find Word</A>, <A HREF="thewordlistmanager.htm">Word List Manager</A> and various other windows whenever words from a word list are displayed. By default this is a fixed pitch font so that letters in words under each other are aligned. However, you can choose any font you like. The fixed pitch fonts are usually Courier and FixedSys. A sample of the current font is shown to the left of the font button. If you wish to use different <A HREF="charactersets.htm">character sets</A> in your word lists you should ensure that the font you choose supports the different character sets.</p>
+</blockquote>
+<H3>Clue Editing</H3>
+
+<blockquote>
+  <p><B>Editing order</B></p>
+  <p>Using the <A HREF="clueeditor.htm">Clue Editor</A> you can either edit clues in the order of their clue numbers, or you can edit all the across words first, then the down words. </p>
+  <p><B>Default database clue</B></p>
+  <p>This option determined which clue in the <A HREF="aboutcluedatabases.htm">clue database</A> is displayed in the clue editor when you edit a clue. You can view the rest of the clues in the database by clicking on the down button at the side of the Database entry.</p>
+  <p><B>Show answer words in upper case</B></p>
+  <p>Select this option if you prefer the answer words shown in upper case when you use <A HREF="reviewingandeditingclues.htm">Review/Edit Clues</A> or <A HREF="printingthepuzzle.htm">print</A> Clues with Answers. </p>
+  <p><B>Changing grid does not delete clues</B></p>
+  <p>If this option is selected you can edit a word slot in the grid and any clue for the word slot remains unchanged. Otherwise when you change the word in the grid the clue is moved to a temporary holding area, and deleted for the current word slot.</p>
+  <p><B>Prefer solution format in database</B></p>
+  <p>When you use a clue from a <A HREF="aboutcluedatabases.htm">clue database</A> when this option is selected the solution word formatting is taken from the database. Otherwise the formatting is left as it is. Deselect this option if you have a database without correctly formatted solution head words.</p>
+  <p><B>Format insensitive database clue sorting</B></p>
+  <p>By default this option is unselected, and clues in a <A HREF="aboutcluedatabases.htm">clue database</A> that have an exact match to the solution word in the <A HREF="clueeditor.htm">Clue Editor</A> are shown first. Select this option if you would like to sort clues by date (see above) irrespective of whether the solutions have the same case and punctuation as the word in the Clue Editor.</p>
+  <p><B>Use WordWeb for automatic clue formatting</B></p>
+  <p>This option is available if you have <A HREF="wordweb.htm">WordWeb</A> installed. If selected it will automatically use the WordWeb database to correctly punctuate words that are being clued.</p>
+  <p><B>Always update</B> (WordWeb)</p>
+  <p>Use this option to always change the lookup word in the WordWeb window whenever the word in the clue editor is changed. Otherwise the lookup word is only changed if the new word does not have a clue.</p>
+  <p><B>Clue text when there is no clue</B></p>
+  <p>This text is printed when you <A HREF="printingthepuzzle.htm">print</A> a clue before you've written it. </p>
+</blockquote>
+<H3>Custom Lookups</H3>
+
+<blockquote>
+  <p>You can add files and delete files that are used for <A HREF="lookuplists.htm">lookup lists</A> by clicking the <B>Add</B> and <B>Delete</B> buttons. </p>
+  <p>You can add a list of items (one per line) to be used in the Explanation/Citation/URL drop-down in the <A HREF="clueeditor.htm">Clue Editor</A> for quick re-selection. If <B>Add new entries from puzzles in session</B> is checked the list will also automatically grow to include all entries added during the current session (the list can be reverted to the default using the right-click option on the entry box in the Clue Editor).
+</blockquote>
+<H3>Dictionaries</H3>
+
+
+<blockquote>
+<p>
+The easiest way to access dictionaries is via <A HREF="wordweb.htm">WordWeb Pro</A>, which has several Oxford and Chambers add-on dictionaries available. However you can also link to other programs on your computer, or to web sites, adding an additional button to the <A HREF="clueeditor.htm">Clue Editor</A>. </p>
+  <p>Click the <B>Auto-detect dictionaries </B>button to scan for and install known dictionaries.
+  <p>You can also add web site look-ups, for example to look up a word on Google you might click on <B>Add…</B> and enter “Google” as the name, and then type https://www.google.com/search?q=%s in the <B>Exe name/URL</B> box.</p>
+  <p>If you use the auto-detect feature you can ignore the remained of this topic, which is advanced and requires more than average computer know-how. You should only need to add dictionaries by hand if they are not supported.</p>
+  <p>To add a dictionary select the <B>Add...</B> button, and type the name of the dictionary (this should generally be the text that appears in the dictionary's window title when you run it). Type in the name of the application file in the <B>Exe name/URL</B> input line, including the full path (e.g. C:\Chambers\Chambers'). If the program has command line parameters include these here too. To include the name of a look-up word in a command line parameter use the '%s' placeholder. E.g. for example <B>Exe name/URL </B>might be </p>
+  <p align="center"><B>c:\Program Files\Vendor\ProgramName.exe "%s".</B></p>
+  <p>If the file path contains spaces then enclose it in quotes, for example for RH Webster's Unabridged Dictionary the <B>Exe name</B> might be</p>
+  <p align="center"><B>"C:\Program Files\Random House, Inc\Random House Webster's Unabridged Dictionary\RHUD30.exe"</B></p>
+  <p>If the dictionary supports DDE (it should say so somewhere in its documentation) you can then enter text in to the Service, Topic and Command input lines. The Command entry can contain the '%s' placeholder to stand for the word being looked up. If the Command entry is blank the command will just be the word being looked up. If these lines are filled in correctly the clue editor button will bring up the dictionary entry for the word that is being clued, if not it will merely activate the dictionary program and you will have to type in the word yourself. For example, for the old RH Webster dictionary:</p>
+</blockquote>
+<TABLE  border=0 align="center" cols=4 frame=box rules=all>
+
+  <TR VALIGN="top">
+    <TD width=24%></TD>
+    <TD width=19%><B>Service</B></TD>
+    <TD width=32%><B>Topic</B></TD>
+    <TD width=25%><B>Command</B></TD>
+  </TR>
+  <TR VALIGN="top">
+    <TD width=24%><B>RH Webster's</B></TD>
+    <TD width=19%>DIC</TD>
+    <TD width=32%>Unabridged: RHUD<br>
+      College: RHCD<br>
+        Thesaurus: RHCT</TD>
+    <TD width=25%>LOOKUP %s</TD>
+  </TR>
+</TABLE>
+<blockquote>
+
+  <p>(Don’t actually include the “College” or “Unabridged” bit, just the bit in capitals).</p>
+  <p>For programs that do not support DDE you should make sure the dictionary name is the same as the title on the window when you open the dictionary (or an unambiguous start). When the dictionary is opened the lookup word is put on the clipboard. You may be able to send some keystrokes to the application to paste in the word in order to look it up automatically. To do this set the <B>Send Keystrokes</B> entry. See the topic on <A HREF="sendingkeystrokes.htm">sending keystrokes</A>.</p>
+  <p>The programs that you add buttons for don't of course have to be dictionaries. You can create an icon for anything. Say you wanted to be able to start Notepad easily. You could add a 'dictionary' called 'Notepad', file name 'c:\windows\notepad.exe' and leave the other entries blank.</p>
+</blockquote>
+</BODY>
+</HTML>

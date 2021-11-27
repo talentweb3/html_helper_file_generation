@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><link rel="stylesheet" href="css/cc.css">
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>R&auml;stel exportieren</TITLE>
+</HEAD>
+
+<BODY>
+
+<H2><A NAME="export"></A>R&auml;stel exportieren</H2><div class="titleline"></div>
+
+<A HREF="#cc5.rtf001">Rich Text</A> - <A HREF="#cc5.p__pdf">PDF</A> - <A HREF="#cc5.p__001">Picture</A> - <A HREF="#cc5.pt_001">Plain Text</A> - <A HREF="#cc5.ff_001">File Formats</A>
+<P>Select <B>Export...</B> from the <B>File</B> menu for a range of options for exporting puzzles to the clipboard or to a file for use with other programs.</P>
+
+<P>
+If you want to export to the web instead see <A HREF="webpub.htm">Web Publishing</A>, exporting <A HREF="Interactivecrosswords.htm">interactive crosswords</A> to a file, or exporting a <A HREF="printablewebpage.htm">printable web page</A>.
+</P>
+
+<P>The left panel in the Export Puzzle window lists available export formats. Click on the on the format you want, and then in the second panel select what you want to export (e.g. puzzle or solution).</P>
+
+<P>The right panel will show an options available for your choice of export format. Select the settings you want here and press the <B>Copy to clipboard</B> or <B>Export file</B> buttons as required (some formats cannot be copied to the clipboard).
+</P>
+
+<P>
+You can save any export format and settings for re-use in future. To do this click the <B>Save</B> button (to change the default name edit the text in the <B>Save as</B> box). You can then load the setting in future by selecting the saved for,at name from the <B>Load export</B> drop-down box.
+</P>
+
+<P>To save the current setting as the default when you open the Export window click the <B>Save options as default</B> button. Click on the <B>Grid properties</B> button to adjust the <A HREF="gridproperties.htm">grid properties</A> or <B>Clue properties</B> to change the layour of the clues.</P>
+
+<P>
+At the top of the Export Puzzle window are two tabs.  Click the <B>Export Groups</B> tab to export in multiple formats at once. See the <A HREF="exportgroups.htm">export groups</A> topic for details.
+</P>
+
+<P>Here is a summary of the different export formats:</P>
+
+<h2><A NAME="cc5.rtf001"></A>Rich Text Format (RTF)</h2>
+
+<P>This is probably the most useful format if you want to use your puzzles in other Windows programs. Most Windows (and some Macintosh) word processors and DTP programs can read Rich Text Format, which gives full formatting information for the text and can contain embedded pictures of the puzzle or solution.</P>
+
+<P>If you don't want your clues on separate lines but would prefer them all in one paragraph then click the <B>Clues in one paragraph</B> box. This will export in the form:</P>
+
+<blockquote>
+  <p> <B>1</B> Clue one - <B>2</B> Clue two - <B>3</B> Clue three...</p>
+</blockquote>
+<P>Change the number of <B>Columns</B> if you want the clues to wrap round a certain number of columns, with the grid spanning as many columns as necessary. If you select the <B>wrap clues round grid</B> option a non-full width column of clues is allowed beside the grid, otherwise only full-width columns of clues are allowed.</P>
+
+<P>You can customize the clue font, space between clues and the space between the clue number and clue by clicking on <A HREF="clueproperties.htm">Clue Properties</A>. If you include the puzzle or solution it will be embedded as a metafile picture, see below.</P>
+
+<P>If you find that the clues do not copy correctly then try increasing the Number/Clue space or not having the clue numbers right aligned (see <A HREF="clueproperties.htm">Clue Properties</A>). This can happen because some programs do not support all the features of Rich Text Format.</P>
+
+
+<h2><A NAME="cc5.p__pdf"></A>PDF</h2>
+<P>
+This option exports a printable web-compatible page (or pages) containing the selected items. The format is the same as when using the <A HREF="printingthepuzzle.htm">Print</A> or <A HREF="printingwithmsword.htm">Print/Export worksheet</A> features. PDF files can be viewed on screen using the widely used and freely available Acrobat Reader software.
+</P>
+
+
+<h2><A NAME="cc5.p__001"></A>Picture</h2>
+
+<P>You can export the puzzle or solution as an image in bitmap, JPEG, GIF, PNG or TIFF format.  Alternatively you can also export the grid as a scalable graphic using the options:</P>
+
+<blockquote>
+  <p><B>Metafile:</B> This is a scalable Windows picture, and is probably best for most applications since it will resize without loss of quality.</p>
+  <p><B>EPS (Encapsulated Postscript):</B> This produces a scalable picture that can be printed to PostScript printers. It can also include a preview image so you can see it on screen. This format is commonly used by professional publishers.</p>
+  <p><B>PDF:</B> This produces a scalable picture that can be printed or viewed on screen using Acrobat Reader.</p>
+</blockquote>
+<P>You can use the picture in many graphics, word-processing and DTP programs. </P>
+
+<P>See the <A HREF="exportingpictures.htm">Exporting Pictures</A> topic for more detailed information.</P>
+
+<h2><A NAME="cc5.pt_001"></A>Plain Text</h2>
+
+<P>Plain text can be used by virtually any program on any machine, and is the most portable way to export the clues and answers. However plain text does not contain any formatting information, so most of the formatting options you have selected for the clues will be lost.</P>
+
+<P>You can also export the solution as plain text. This is most inelegant, but useful as a very reliable way of transferring grid information. Various Internet applications take in grids in this plain text format. The character that is used to represent blocks can be set in the <B>Block Character</B> input line, and similarly for <B>Void Character</B>. Change the <B>Clue/Number characters </B>to change the letters that are used to separate the clue number from the clue. Select the <B>Right align numbers</B> option to insert a space before short clue numbers so that all the clue numbers finish at the same character position. Select<B> Clues with Answers</B> to have the uppercase answer word after the clue (separated by the <B>Clue/Number characters</B>).</P>
+
+<H2><A NAME="cc5.ff_001"></A>File Formats</H2>
+
+<P>You can export puzzles in various file formats for use with other crossword software. Only the XML format supports all puzzle styles, the others are restricted to simple crossword puzzles.</P>
+
+<blockquote>
+<h3>XML puzzle</h3>
+  <P>
+This is a flexible, portable and documented file format that supports all main puzzle types. See the <A HREF="XML.htm">XML format</A> topic for details.
+</P>
+<h3>Across Lite (puz)</h3>
+  <p>Use this option to convert puzzles to Across format PUZ files. (tm)Across is a puzzle solving package available on the Internet from <a href="https://www.litsoft.com" target="_blank">www.litsoft.com</a>.</p>
+  <p>The <B>Restrict Solution</B> option does not put the solution letters into the file, so the solution is absolutely secure (useful for competition puzzles). The <B>Scramble solution</B> option merely encodes the letters, and can be revealed using the code number given once you have converted the puzzle.</p>
+  <h3>Maestro</h3>
+  <p>Use this option to convert puzzles to Crossword Maestro format .CMO files. Crossword Maestro is a solving program. </p>
+  <p>The <B>Restrict Solution</B> option doesn't include the solution letters in the file, so people can solve the puzzle without being able to cheat. Select <B>Cryptic crossword</B> to make Crossword Maestro's clue solver work in cryptic mode. Select <B>Barred crossword</B> to flag the puzzle as being barred.</p>
+  <H3>Crossdown format</H3>
+  <p>Crossdown<B> </B>is a solving and compiling program. Crossdown only supports a limited number of square grid sizes.</p>
+  <H3>ipuz format</H3>
+  <p>ipuz<B> </B>is an open JSON puzzle format, used for example by some solving applets</p>
+</blockquote>
+
+
+
+</BODY>
+</HTML>
